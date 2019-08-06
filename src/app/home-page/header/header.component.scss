@@ -1,0 +1,35 @@
+@import "../../../environments/colors";
+
+.header {
+    //font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+    // background-color: orange;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-blue-light, 0.4),
+        rgba($color-blue-dark, 0.05)),
+        url(../../../assets/images/HomePageImage.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    background-position: top;
+
+    &__text-box {
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+
+
+        &--img {
+            width: 20rem;
+            transform: translate(6rem, 3.5rem);
+        }
+
+        &--heading {
+            color: $color-white;
+            font-size: 18rem;
+            display: inline-block;
+        }
+    }
+}
