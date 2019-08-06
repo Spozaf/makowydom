@@ -1,10 +1,35 @@
-<div class="navbar">
+<div [ngClass]="{'navbar__scroll' : scrolled, 'navbar__scroll-not' : !scrolled}">
     <ul class="navbar__list">
-        <li class="navbar__item"><a href="" class="navbar__link">Makowy dom</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Galeria</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Apartament</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Atrakcje</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Okolica</a></li>
-        <li class="navbar__item"><a href="" class="navbar__link">Cennik</a></li>
+        <li class="navbar__item" routerLinkActive="active">
+            <a [routerLink]="[ '/' ]" 
+            [ngClass]="{
+                'navbar__link--scroll' : scrolled, 
+                'navbar__link--scroll-not' : !scrolled}">Makowy dom</a>
+            </li>
+        <li class="navbar__item">
+            <a href="" [ngClass]="{
+                'navbar__link--scroll' : scrolled, 
+                'navbar__link--scroll-not' : !scrolled}">Galeria</a>
+            </li>
+        <li class="navbar__item">
+            <a href="" [ngClass]="{
+                'navbar__link--scroll' : scrolled, 
+                'navbar__link--scroll-not' : !scrolled}">Apartament</a>
+            </li>
+        <li class="navbar__item">
+            <a href="" [ngClass]="{
+                'navbar__link--scroll' : scrolled, 
+                'navbar__link--scroll-not' : !scrolled}">Atrakcje</a>
+            </li>
+        <li class="navbar__item">
+            <a href="" [ngClass]="{
+                'navbar__link--scroll' : scrolled, 
+                'navbar__link--scroll-not' : !scrolled}">Okolica</a>
+            </li>
+        <li class="navbar__item">
+            <a href="" [ngClass]="{
+                'navbar__link--scroll' : scrolled, 
+                'navbar__link--scroll-not' : !scrolled}">Cennik</a>
+            </li>
     </ul>
 </div>

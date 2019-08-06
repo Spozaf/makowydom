@@ -1,40 +1,71 @@
 @import "../../environments/colors";
 
+%navbar-shared {
+  font-size: 3rem;
+  position: fixed;
+  z-index: 1;
+}
+
+%link-shared {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  display: inline-block;
+  transition: all .5s;
+}
+
 .navbar {
-    font-size: 3rem;
-    position: fixed;
-    z-index: 1;
-    background-color: rgba($color-white, .2);
+  &__scroll-not {
+    background-color: rgba($color-white, 0.2);
+    @extend %navbar-shared;
+  }
 
-    &__list {
-        list-style: none;
-        width: 100vw;
-        //background-color: orange;
-        text-align: center;
-        padding: 2.5rem 0;
+  &__scroll {
+    background-color: rgba($color-white, 1);
+    @extend %navbar-shared;
+  }
+
+  &__list {
+    list-style: none;
+    width: 100vw;
+    text-align: center;
+    padding: 2.5rem 0;
+  }
+
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 3.5rem;
+    }
+  }
+
+  // Class when you scroll page
+  &__link--scroll {
+    &:link,
+    &:visited {
+      color: $color-primary;
+      @extend %link-shared;
     }
 
-    &__item {
-        display: inline-block;
-        &:not(:last-child){
-            margin-right: 3.5rem;
-        }
+    &:hover,
+    &:active {
+      color: rgba($color-primary, 0.6);
+      transform: scale(1.05);
+    }
+  }
+
+  // Class wehan you didn't scroll
+  &__link--scroll-not {
+    &:link,
+    &:visited {
+      color: $color-white;
+      @extend %link-shared;
     }
 
-    &__link {
-
-        &:link,
-        &:visited {
-            color: $color-white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bolder;
-        }
-
-
-        &:hover,
-        &:active {
-            color: rgba($color-primary , .8) ;
-        }
+    &:hover,
+    &:active {
+      color: rgba($color-primary, 0.8);
+      transform: scale(1.05);
     }
+  }
 }

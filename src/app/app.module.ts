@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { HeaderComponent } from './home-page/header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SocialProofComponent } from './home-page/social-proof/social-proof.component';
+import { SocialCardComponent } from './home-page/social-proof/social-card/social-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    SocialProofComponent,
+    SocialCardComponent
   ],
   imports: [
     BrowserModule,
