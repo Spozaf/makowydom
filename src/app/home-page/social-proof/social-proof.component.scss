@@ -1,6 +1,15 @@
-@import "../../../environments/colors";
+@import "../../../sharedScss/colors";
 
 .social-proof {
-    height: 35vh;
-    background-color: $color-primary;
+    height: 27rem;
+    //background-color: $color-primary;
+    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-light-1);
+
+    &__list {
+
+    }
+
+    &__item {
+        display: inline-block;
+    }
 }

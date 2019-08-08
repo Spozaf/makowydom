@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { WINDOW_PROVIDERS } from './window.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,7 +23,7 @@ import { SocialCardComponent } from './home-page/social-proof/social-card/social
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

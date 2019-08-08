@@ -1,4 +1,6 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Inject } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { WINDOW } from './../window.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +11,10 @@ export class NavbarComponent implements OnInit {
   // scrolledClass = 'navbar__scroll-not';
   scrolled = false;
 
-  constructor() { }
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    @Inject(WINDOW) private window
+  ) { }
 
   ngOnInit() {
   }
