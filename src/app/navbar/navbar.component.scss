@@ -1,4 +1,4 @@
-@import "../../sharedScss/colors";
+@import "../../sharedScss/variables";
 
 %navbar-shared {
   font-size: 3rem;
@@ -15,6 +15,8 @@
 }
 
 .navbar {
+  border-bottom: 1px solid rgba($color-primary, .5);
+
   &__scroll-not {
     background-color: rgba($color-secondary, 0.2);
     @extend %navbar-shared;

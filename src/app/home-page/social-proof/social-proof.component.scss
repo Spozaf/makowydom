@@ -1,9 +1,9 @@
-@import "../../../sharedScss/colors";
+@import "../../../sharedScss/variables";
 
 .social-proof {
-    height: 27rem;
+    height: $section-break;
     //background-color: $color-primary;
-    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-light-1);
+    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark-1);
 
     &__item {
         display: inline-block;

@@ -12,3 +12,11 @@
         clear: both;
     }
 }
+
+@mixin boxShadow {
+    box-shadow: 0 1rem 3rem rgba(#000000, .3);
+}
+
+@mixin boxShadowHover {
+    box-shadow: 0 .5rem 1.5rem rgba(#000000, .5);
+}
