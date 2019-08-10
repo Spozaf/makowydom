@@ -9,6 +9,9 @@ import { HeaderComponent } from './home-page/header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SocialProofComponent } from './home-page/social-proof/social-proof.component';
 import { SocialCardComponent } from './home-page/social-proof/social-card/social-card.component';
+import { MainInfoComponent } from './home-page/main-info/main-info.component';
+import { ButtonComponent } from './shared-components/button/button.component';
+import { CallToActionPhoneComponent } from './shared-components/call-to-action-phone/call-to-action-phone.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { SocialCardComponent } from './home-page/social-proof/social-card/social
     HeaderComponent,
     NavbarComponent,
     SocialProofComponent,
-    SocialCardComponent
+    SocialCardComponent,
+    MainInfoComponent,
+    ButtonComponent,
+    CallToActionPhoneComponent
   ],
   imports: [
     BrowserModule,

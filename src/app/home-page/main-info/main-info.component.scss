@@ -1,0 +1,86 @@
+@import "../../../sharedScss/variables";
+
+.main-info {
+    height: 95vh;
+    padding: 5rem 5rem;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 55%;
+    grid-column-gap: 5%;
+
+
+    &__photo {
+        height: 100%;
+        width: 100%;
+        //background-color: red;
+        background-image: url(./../../../assets/images/dom.JPG);
+        background-size: cover;
+        margin-right: 5rem;
+    }
+
+    &__content {
+        height: 100%;
+        //background-color: blue;
+        display: grid;
+        grid-template-rows: auto;
+
+        &--name {
+            text-align: center;
+            font-size: 5rem;
+            color: $color-primary-dark-1;
+            font-weight: bold;
+        }
+
+        &--text {
+            text-align: center;
+            font-size: 2rem;
+            color: $color-primary-dark-1;
+            font-weight: normal;
+            transform: translateY(-.7rem);
+        }
+
+        &--four-people {
+            text-align: center;
+            margin-top: 2rem;
+            &--icon {
+
+                img {
+                    height: 5rem;    
+                    //display: inline-block;
+                }
+            }
+
+            &--text {
+                color: $color-primary-dark-1;
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            
+
+        }
+
+        &--info-list {
+            list-style: none;
+            width: 100%;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        &--info-item{
+            display: inline-block;
+            &:not(:last-child) {
+              margin-right: 2rem;
+            }
+
+            img {
+                height: 9rem;
+            }
+
+            &--text{
+                color: $color-primary-dark-1;
+                font-size: 2rem;
+                font-weight: bold;
+            }
+        }
+    }
+}
