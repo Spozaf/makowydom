@@ -1,0 +1,35 @@
+@import "../../../sharedScss/variables";
+@import "../../../sharedScss/mixins";
+
+.call-to-action {
+    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark-1);
+    height: $section-break;
+    position: relative;
+
+    &__info {
+        @include center;
+        color: $color-secondary;
+        &--icons {
+            :not(:last-child){
+                margin-right: 30%;
+            }
+            text-align: center;
+            transform: translateY(1.7rem);
+        }
+
+        &--icon {
+            height: 4rem; 
+        }
+
+        &--phone {
+            font-size: 8rem;
+            text-shadow: 0 1rem 2rem rgba(black, .8);
+        }
+
+        &--text {
+            text-align: center;
+            font-size: 3rem;
+            text-shadow: 0 0.5rem 1rem rgba(black, .4);
+        }
+    }
+}
