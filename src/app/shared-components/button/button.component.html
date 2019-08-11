@@ -1,5 +1,8 @@
 <div class="button__parent">
-    <a href="#" class="button">
-        <span class="button__link">Cennik</span>
+    <a href="#" class="button" [ngClass]="{
+        'btn-red': isRed,
+        'btn-white': !isRed
+    }">
+        <span class="button__link">{{buttonText}}</span>
     </a>
 </div>
