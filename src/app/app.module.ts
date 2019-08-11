@@ -12,6 +12,7 @@ import { SocialCardComponent } from './home-page/social-proof/social-card/social
 import { MainInfoComponent } from './home-page/main-info/main-info.component';
 import { ButtonComponent } from './shared-components/button/button.component';
 import { CallToActionPhoneComponent } from './shared-components/call-to-action-phone/call-to-action-phone.component';
+import { SitePartsComponent } from './home-page/site-parts/site-parts.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CallToActionPhoneComponent } from './shared-components/call-to-action-p
     SocialCardComponent,
     MainInfoComponent,
     ButtonComponent,
-    CallToActionPhoneComponent
+    CallToActionPhoneComponent,
+    SitePartsComponent
   ],
   imports: [
     BrowserModule,
