@@ -1,34 +1,49 @@
 @import "../../../sharedScss/variables";
 
+@keyframes slideInFromDown {
+  0% {
+    transform: translate(-50%, -2%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
 .header {
-    //font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
-    // background-color: orange;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-blue-light, 0.4),
-        rgba($color-blue-dark, 0.05)),
-        url(../../../assets/images/HomePageImage.jpg);
-    background-size: cover;
-    height: 100vh;
-    position: relative;
+  //font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
+  // background-color: orange;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-blue-light, 0.4),
+      rgba($color-blue-dark, 0.05)
+    ),
+    url(../../../assets/images/HomePageImage.jpg);
+  background-size: cover;
+  height: 100vh;
+  position: relative;
 
-    &__text-box {
-        position: absolute;
-        top: 37%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
+  &__text-box {
+      
+    animation: 3s ease-out .5s 1 forwards slideInFromDown;
+    //animation-delay: 1s;
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    opacity: 0;
 
-
-        &--img {
-            width: 20rem;
-            transform: translate(6rem, 3.5rem);
-        }
-
-        &--heading {
-            color: $color-white;
-            font-size: 18rem;
-            display: inline-block;
-        }
+    &--img {
+      width: 20rem;
+      transform: translate(6rem, 3.5rem);
     }
+
+    &--heading {
+      color: $color-white;
+      font-size: 18rem;
+      display: inline-block;
+    }
+  }
 }
