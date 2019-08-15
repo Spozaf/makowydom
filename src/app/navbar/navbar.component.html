@@ -1,18 +1,18 @@
 <div class="navbar" [ngClass]="{'navbar__scroll' : scrolled, 'navbar__scroll-not' : !scrolled}">
     <ul class="navbar__list">
-        <li class="navbar__item" routerLinkActive="active">
+        <li class="navbar__item">
             <a [routerLink]="[ '/' ]" 
             [ngClass]="{
                 'navbar__link--scroll' : scrolled, 
                 'navbar__link--scroll-not' : !scrolled}">Makowy dom</a>
             </li>
         <li class="navbar__item">
-            <a href="" [ngClass]="{
+            <a routerLink="/apartament" [ngClass]="{
                 'navbar__link--scroll' : scrolled, 
                 'navbar__link--scroll-not' : !scrolled}">Galeria</a>
             </li>
         <li class="navbar__item">
-            <a href="" [ngClass]="{
+            <a routerLink="/apartament" [ngClass]="{
                 'navbar__link--scroll' : scrolled, 
                 'navbar__link--scroll-not' : !scrolled}">Apartament</a>
             </li>

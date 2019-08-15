@@ -14,6 +14,7 @@ import { ButtonComponent } from './shared-components/button/button.component';
 import { CallToActionPhoneComponent } from './shared-components/call-to-action-phone/call-to-action-phone.component';
 import { SitePartsComponent } from './home-page/site-parts/site-parts.component';
 import { FooterComponent } from './footer/footer.component';
+import { ApartamentPageComponent } from './apartament-page/apartament-page.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
     ButtonComponent,
     CallToActionPhoneComponent,
     SitePartsComponent,
-    FooterComponent
+    FooterComponent,
+    ApartamentPageComponent
   ],
   imports: [
     BrowserModule,
