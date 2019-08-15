@@ -15,6 +15,7 @@ import { CallToActionPhoneComponent } from './shared-components/call-to-action-p
 import { SitePartsComponent } from './home-page/site-parts/site-parts.component';
 import { FooterComponent } from './footer/footer.component';
 import { ApartamentPageComponent } from './apartament-page/apartament-page.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ApartamentPageComponent } from './apartament-page/apartament-page.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlickCarouselModule
   ],
   providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
