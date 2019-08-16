@@ -9,8 +9,7 @@ export class SocialProofComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   slides = [
     {img: "http://placehold.it/350x150/000000"},
@@ -27,9 +26,9 @@ export class SocialProofComponent implements OnInit {
   "slidesToScroll": 1,
   "infinite": true,
   "autoplay": true,
-  "autoplaySpeed": 5000,
-  "dots": true,
-  "arrows": false,
+  "autoplaySpeed": 500,
+  //"dots": true,
+  //"arrows": false,
   "speed": 3000
   };
 }

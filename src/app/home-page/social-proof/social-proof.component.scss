@@ -2,10 +2,21 @@
 
 .social-proof {
     height: $section-break;
-    //background-color: $color-primary;
-    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark-1);
+    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark-1); 
 
-    &__item {
-        display: inline-block;
+    .carousel {
+        ::ng-deep button {
+            transform: translate(0, 1.2rem);
+            top: 100%;
+
+            &.slick-prev {
+                left: 1rem;
+            }
+
+            &.slick-next {
+                right: 1rem;
+            }
+        }
     }
 }
+
