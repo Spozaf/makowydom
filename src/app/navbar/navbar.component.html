@@ -1,35 +1,40 @@
-<div class="navbar" [ngClass]="{'navbar__scroll' : scrolled, 'navbar__scroll-not' : !scrolled}">
+<div class="navbar" [ngClass]="{'navbar__scroll' : !navbarTransparent, 'navbar__scroll-not' : navbarTransparent}">
     <ul class="navbar__list">
         <li class="navbar__item">
-            <a [routerLink]="[ '/' ]" 
+            <a 
+            [routerLink]="[ '/' ]" 
             [ngClass]="{
-                'navbar__link--scroll' : scrolled, 
-                'navbar__link--scroll-not' : !scrolled}">Makowy dom</a>
+                'navbar__link--scroll' : !navbarTransparent, 
+                'navbar__link--scroll-not' : navbarTransparent}"
+                >Makowy dom</a>
             </li>
         <li class="navbar__item">
             <a routerLink="/apartament" [ngClass]="{
-                'navbar__link--scroll' : scrolled, 
-                'navbar__link--scroll-not' : !scrolled}">Galeria</a>
+                'navbar__link--scroll' : !navbarTransparent, 
+                'navbar__link--scroll-not' : navbarTransparent}">Galeria</a>
             </li>
         <li class="navbar__item">
-            <a routerLink="/apartament" [ngClass]="{
-                'navbar__link--scroll' : scrolled, 
-                'navbar__link--scroll-not' : !scrolled}">Apartament</a>
-            </li>
-        <li class="navbar__item">
-            <a href="" [ngClass]="{
-                'navbar__link--scroll' : scrolled, 
-                'navbar__link--scroll-not' : !scrolled}">Atrakcje</a>
-            </li>
-        <li class="navbar__item">
-            <a href="" [ngClass]="{
-                'navbar__link--scroll' : scrolled, 
-                'navbar__link--scroll-not' : !scrolled}">Okolica</a>
+            <a 
+            routerLink="/apartament"
+            [ngClass]="{
+                'navbar__link--scroll' : !navbarTransparent, 
+                'navbar__link--scroll-not' : navbarTransparent}"
+            >Apartament</a>
             </li>
         <li class="navbar__item">
             <a href="" [ngClass]="{
-                'navbar__link--scroll' : scrolled, 
-                'navbar__link--scroll-not' : !scrolled}">Cennik</a>
+                'navbar__link--scroll' : !navbarTransparent, 
+                'navbar__link--scroll-not' : navbarTransparent}">Atrakcje</a>
+            </li>
+        <li class="navbar__item">
+            <a href="" [ngClass]="{
+                'navbar__link--scroll' : !navbarTransparent, 
+                'navbar__link--scroll-not' : navbarTransparent}">Okolica</a>
+            </li>
+        <li class="navbar__item">
+            <a href="" [ngClass]="{
+                'navbar__link--scroll' : !navbarTransparent, 
+                'navbar__link--scroll-not' : navbarTransparent}">Cennik</a>
             </li>
     </ul>
 </div>
