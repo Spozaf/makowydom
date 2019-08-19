@@ -1,0 +1,29 @@
+@import "../../../sharedScss/variables";
+@import "../../../sharedScss/mixins";
+
+.call-to-action-mail {
+    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark-1);
+    height: $section-break;
+    position: relative;
+    color: $color-secondary;
+
+    &__info {
+        @include center;
+        font-weight: bold;
+
+        &--write{
+            font-size: 4rem;
+            transform: translateY(2rem);
+        }
+
+        &--email{
+            font-size: 7rem;
+        }
+
+        &--wait{
+            font-size: 3rem;
+            text-align: right;
+            transform: translateY(-1rem);
+        }
+    }
+}
