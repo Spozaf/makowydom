@@ -1,6 +1,43 @@
+@import "../../sharedScss/variables";
+
 .apartament{
+    padding-top: 10rem;
+
+    &__heading {
+        text-align: center;
+
+        &--text {
+            color: $color-primary;
+            font-size: 7rem;
+        }
+    }
+
     &__carousel {
-        height: 95vh;
+
+        &--slick {
+            margin: 4rem auto;
+        }
+
+        ::ng-deep button {
+            transform: translate(0, 1.2rem);
+            top: 100%;
+
+            &.slick-prev {
+                left: 1rem;
+
+                &::before {
+                    color: $color-primary;
+                }
+            }
+
+            &.slick-next {
+                right: 1rem;
+
+                &::before {
+                    color: $color-primary;
+                }
+            }
+        }
     }
 
 }

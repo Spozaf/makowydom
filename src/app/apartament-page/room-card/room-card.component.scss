@@ -1,0 +1,32 @@
+@import "../../../sharedScss/variables";
+@import "../../../sharedScss/mixins";
+
+.room-card {
+    height: 60vh;
+    //border: 1px solid black;
+    margin: 1rem 1rem;
+    border-radius: 3px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 1rem 0 rgba(black, .35);
+    -moz-box-shadow: 0 0 1rem 0 rgba(black, .35);
+    box-shadow: 0 0 1rem 0 rgba(black, .35);
+    
+    &__photo{
+        height: 80%;
+        background-image: url(./../../../assets/images/grill.JPG);
+        background-size: cover;
+    }
+    
+    &__text{
+        height: 20%;
+        background-color: $color-primary;
+        position: relative;
+
+        &--room-name{
+            @include center;
+        }
+        
+    }
+
+    
+}
