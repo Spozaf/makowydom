@@ -1,0 +1,94 @@
+@import "../../../sharedScss/variables";
+@import "../../../sharedScss/mixins";
+
+%grid-area-properties{
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.apartament-gallery {
+  height: 95vh;
+  padding: 2rem;
+  &__grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.1fr 1.2fr 0.7fr 1fr;
+    grid-template-rows: 1fr 1fr 1.1fr 0.9fr;
+    grid-template-areas:
+      "Image Image S-Image-1 S-Image-1"
+      "Image Image S-Image-2 S-Image-2"
+      "Image Image S-Image-3 S-Image-3"
+      "Image Image S-Image-4 S-Image-4";
+    gap: 1rem 1rem;
+
+    &--main-image {
+      grid-area: Image;
+      @extend %grid-area-properties;
+    }
+
+    &--main-img{
+      height: 100%;
+      width: 100%;
+    }
+
+    &--main-info {
+      background-color: rgba($color-secondary, .8);
+      width: 60%;
+      height: 40%;
+      bottom: 1rem;
+      margin-left: 1rem;
+      position: absolute;
+      padding: 1rem;
+    }
+
+    &--main-info-heading {
+        font-size: 6rem;
+        color: $color-primary;
+    }
+
+    &--main-info-text {
+        font-size: 1.7rem;
+        color: $color-primary;
+        padding-top: .7rem;
+    }
+
+    &--side-image-1 {
+      grid-area: S-Image-1;
+      @extend %grid-area-properties;
+    }
+
+    &--side-image-2 {
+      grid-area: S-Image-2;
+      @extend %grid-area-properties;
+    }
+
+    &--side-image-3 {
+      grid-area: S-Image-3;
+      @extend %grid-area-properties;
+    }
+
+    &--side-image-4 {
+      grid-area: S-Image-4;
+      @extend %grid-area-properties;
+    }
+
+    &--side-info {
+      color: $color-primary;
+      margin: 1rem;
+      background-color: rgba($color-secondary, .8);
+      width: 40%;
+      height: 60%;
+      position: absolute;
+      padding: 1rem;
+    }
+
+    &--side-info-heading {
+      font-size: 3rem;
+    }
+
+    &--side-info-text {
+      font-size: 1.3rem;
+    }
+  }
+}
