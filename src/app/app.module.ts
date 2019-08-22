@@ -19,6 +19,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RoomCardComponent } from './apartament-page/room-card/room-card.component';
 import { CallToActionMailComponent } from './shared-components/call-to-action-mail/call-to-action-mail.component';
 import { ApartamentGalleryComponent } from './apartament-page/apartament-gallery/apartament-gallery.component';
+import { OkolicaPageComponent } from './okolica-page/okolica-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ApartamentGalleryComponent } from './apartament-page/apartament-gallery
     ApartamentPageComponent,
     RoomCardComponent,
     CallToActionMailComponent,
-    ApartamentGalleryComponent
+    ApartamentGalleryComponent,
+    OkolicaPageComponent
   ],
   imports: [
     BrowserModule,

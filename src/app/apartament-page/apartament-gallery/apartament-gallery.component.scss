@@ -5,6 +5,21 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  box-shadow: 0 .5rem 2rem black;
+}
+
+%grid-row-properties {
+  transition: all .5s;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 0rem 1.3rem .7rem rgba($color-secondary, 1);
+    transform: translateY(-.5rem);
+    overflow: hidden;
+  }
+  &:active{
+    transform: translateY(.5rem);
+    opacity: .1;
+  }
 }
 
 .apartament-gallery {
@@ -56,21 +71,25 @@
     &--side-image-1 {
       grid-area: S-Image-1;
       @extend %grid-area-properties;
+      @extend %grid-row-properties;
     }
 
     &--side-image-2 {
       grid-area: S-Image-2;
       @extend %grid-area-properties;
+      @extend %grid-row-properties;
     }
 
     &--side-image-3 {
       grid-area: S-Image-3;
       @extend %grid-area-properties;
+      @extend %grid-row-properties;
     }
 
     &--side-image-4 {
       grid-area: S-Image-4;
       @extend %grid-area-properties;
+      @extend %grid-row-properties;
     }
 
     &--side-info {

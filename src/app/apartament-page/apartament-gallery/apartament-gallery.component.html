@@ -1,45 +1,73 @@
 <section class="apartament-gallery">
-    <div class="apartament-gallery__grid-container">
-        <div 
-        class="apartament-gallery__grid-container--main-image"
-        [ngStyle]="{'background-image': 'url(./../../../../assets/images/apartament/salon.JPG)'}">
-            <!-- <img src="./../../../assets/images/DSC07616.JPG"  class="apartament-gallery__grid-container--main-img"alt=""> -->
-            <div class="apartament-gallery__grid-container--main-info">
-                <h1 class="apartament-gallery__grid-container--main-info-heading">Pokój</h1>
-                <p class="apartament-gallery__grid-container--main-info-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione nulla non sunt beatae nihil soluta sit iusto minima asperiores dignissimos tempora eveniet at hic nisi tenetur, ut nemo? Porro.</p>
-            </div>
-        </div>
-        <div 
-        class="apartament-gallery__grid-container--side-image-1"
-        [ngStyle]="{'background-image': 'url(./../../../../assets/images/apartament/kuchnia.JPG'}">
-            <!-- <img 
-            src="./../../../assets/images/DSC07616.JPG"  
-            class="apartament-gallery__grid-container--side-img"
-            alt=""> -->
-            <div class="apartament-gallery__grid-container--side-info">
-                <h3 class="apartament-gallery__grid-container--side-info-heading">Kuchnia</h3>
-                <p class="apartament-gallery__grid-container--side-info-text">Sam zobacz...</p>
-            </div>
-        </div>
-        <div class="apartament-gallery__grid-container--side-image-2"
-        [ngStyle]="{'background-image': 'url(./../../../../assets/images/apartament/pokoj.JPG)'}">
-            <div class="apartament-gallery__grid-container--side-info">
-                Side Info
-            </div>
-        </div>
-        <div class="apartament-gallery__grid-container--side-image-3"
-        [ngStyle]="{'background-image': 'url(./../../../../assets/images/apartament/taras.JPG)'}">
-                
-            <div class="apartament-gallery__grid-container--side-info">
-                Side Info
-            </div>
-        </div>
-        <div class="apartament-gallery__grid-container--side-image-4"
-        [ngStyle]="{'background-image': 'url(./../../../../assets/images/apartament/lazienka.JPG)'}">
-                
-            <div class="apartament-gallery__grid-container--side-info">
-                Side Info
-            </div>
-        </div>
+  <div class="apartament-gallery__grid-container">
+    <div
+      class="apartament-gallery__grid-container--main-image"
+      [ngStyle]="{ 'background-image': 'url(' + mainInfo.imgPath + ')' }"
+    >
+      <div class="apartament-gallery__grid-container--main-info">
+        <h1 class="apartament-gallery__grid-container--main-info-heading">
+          {{ mainInfo.name }}
+        </h1>
+        <p class="apartament-gallery__grid-container--main-info-text">
+          {{ mainInfo.description }}
+        </p>
+      </div>
     </div>
+    <div
+      class="apartament-gallery__grid-container--side-image-1"
+      [ngStyle]="{ 'background-image': 'url(' + rowOne.imgPath + ')' }"
+      (click)="onCheckRoomInfo(1)"
+    >
+      <div class="apartament-gallery__grid-container--side-info">
+        <h3 class="apartament-gallery__grid-container--side-info-heading">
+          {{ rowOne.name }}
+        </h3>
+        <p class="apartament-gallery__grid-container--side-info-text">
+          Sam zobacz...
+        </p>
+      </div>
+    </div>
+    <div
+      class="apartament-gallery__grid-container--side-image-2"
+      [ngStyle]="{ 'background-image': 'url(' + rowTwo.imgPath + ')' }"
+      (click)="onCheckRoomInfo(2)"
+    >
+      <div class="apartament-gallery__grid-container--side-info">
+        <h3 class="apartament-gallery__grid-container--side-info-heading">
+          {{ rowTwo.name }}
+        </h3>
+        <p class="apartament-gallery__grid-container--side-info-text">
+          Sam zobacz...
+        </p>
+      </div>
+    </div>
+    <div
+      class="apartament-gallery__grid-container--side-image-3"
+      [ngStyle]="{ 'background-image': 'url(' + rowThree.imgPath + ')' }"
+      (click)="onCheckRoomInfo(3)"
+    >
+      <div class="apartament-gallery__grid-container--side-info">
+        <h3 class="apartament-gallery__grid-container--side-info-heading">
+          {{ rowThree.name }}
+        </h3>
+        <p class="apartament-gallery__grid-container--side-info-text">
+          Sam zobacz...
+        </p>
+      </div>
+    </div>
+    <div
+      class="apartament-gallery__grid-container--side-image-4"
+      [ngStyle]="{ 'background-image': 'url(' + rowFour.imgPath + ')' }"
+      (click)="onCheckRoomInfo(4)"
+    >
+      <div class="apartament-gallery__grid-container--side-info">
+        <h3 class="apartament-gallery__grid-container--side-info-heading">
+          {{ rowFour.name }}
+        </h3>
+        <p class="apartament-gallery__grid-container--side-info-text">
+          Sam zobacz...
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
