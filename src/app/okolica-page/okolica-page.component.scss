@@ -1,9 +1,11 @@
 @import "../../sharedScss/variables";
 
 .okolica{
-    padding-top: 8rem;
+    padding-top: 9rem;
     height: 95vh;
     background-color: $color-secondary;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
 
     &__grid {
         height: 100%;
@@ -14,6 +16,7 @@
         "Text Text Forest Cracov Cracov" 
         "Text Text Wielicka Mountain Sanctuary" 
         "Text Text Wielicka Nowysacz Tower";
+        grid-gap: 1rem 1rem;
 
         &--text {
             grid-area: Text;

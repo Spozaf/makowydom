@@ -1,6 +1,38 @@
 
 <section class="okolica-gallery">
-    <app-okolica-gallery-element></app-okolica-gallery-element>
-    <app-okolica-gallery-element></app-okolica-gallery-element>
-    <app-okolica-gallery-element></app-okolica-gallery-element>
+    <div class="okolica-gallery__element">
+            <app-okolica-gallery-element
+            nazwa = 'Miasta'
+            elementOne = 'Kraków'
+            elementTwo = 'Wieliczka'
+            elementThree = 'Nowy Sącz'
+            ></app-okolica-gallery-element>
+    </div>
+    <div class="okolica-gallery__element">
+            <app-okolica-gallery-element
+            nazwa = 'Atrakcje'
+            elementOne = 'Sankturaium w Pasierbcu'
+            elementTwo = 'Rabkoland'
+            elementThree = 'Limanowa - Ski'
+            [isLeft] = 'false'
+            photoOne = './../../../assets/images/Okolica/Atrakcje/limanowaski1.jpg'
+            photoTwo = './../../../assets/images/Okolica/Atrakcje/pasierbiec.jpg'
+            photoThree = '../../../assets/images/Okolica/Atrakcje/rabkland2.png'
+            photoFour = '../../../assets/images/Okolica/Atrakcje/rabkoland1.jpg'
+            photoFive = './../../../assets/images/Okolica/Atrakcje/limanowaski2.jpg'
+            ></app-okolica-gallery-element>
+    </div>
+    <div class="okolica-gallery__element">
+            <app-okolica-gallery-element
+            nazwa = 'Szczyty'
+            elementOne = 'Paproć'
+            elementTwo = 'Limanowski Krzyż'
+            elementThree = 'Łysa Góra'
+            photoOne = './../../../assets/images/Okolica/szczyty/paproc2.jpg'
+            photoTwo = './../../../assets/images/Okolica/szczyty/lysa2.jpg'
+            photoThree = '../../../assets/images/Okolica/szczyty/limanowakrzyz1.jpg'
+            photoFour = '../../../assets/images/Okolica/szczyty/limanowsikrzyz2.jpg'
+            photoFive = './../../../assets/images/Okolica/szczyty/lysa1.jpg'
+            ></app-okolica-gallery-element>
+    </div>
 </section>
