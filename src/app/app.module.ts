@@ -20,6 +20,8 @@ import { RoomCardComponent } from './apartament-page/room-card/room-card.compone
 import { CallToActionMailComponent } from './shared-components/call-to-action-mail/call-to-action-mail.component';
 import { ApartamentGalleryComponent } from './apartament-page/apartament-gallery/apartament-gallery.component';
 import { OkolicaPageComponent } from './okolica-page/okolica-page.component';
+import { OkolicaGalleryComponent } from './okolica-page/okolica-gallery/okolica-gallery.component';
+import { OkolicaGalleryElementComponent } from './okolica-page/okolica-gallery/okolica-gallery-element/okolica-gallery-element.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { OkolicaPageComponent } from './okolica-page/okolica-page.component';
     RoomCardComponent,
     CallToActionMailComponent,
     ApartamentGalleryComponent,
-    OkolicaPageComponent
+    OkolicaPageComponent,
+    OkolicaGalleryComponent,
+    OkolicaGalleryElementComponent
   ],
   imports: [
     BrowserModule,
