@@ -2,8 +2,9 @@
 
 .footer {
     padding: 5rem;
-    background-image: $gradient-red;
-    color: $color-secondary;
+    background-image: $gradient-white;
+    color: $color-text;
+    border-top: $my-border-bottom;
     
 
     &__grid {
@@ -39,10 +40,16 @@
     &__logo{
         width: 100%;
         transform: translate(-10rem, 1rem);
+        
     }
 
     &__img {
         width: 20%;
+        margin-right: 1rem;
+    }
+
+    &__social-wrapper {
+        text-align: center;
     }
 
 }

@@ -15,7 +15,7 @@
 }
 
 .navbar {
-  border-bottom: 1px solid rgba(#280f0f, .5);
+  border-bottom: 1px solid rgba($color-primary-dark-1, .5);
 
   &__scroll-not {
     background-color: rgba($color-secondary, 0.2);
@@ -37,9 +37,7 @@
 
   &__item {
     display: inline-block;
-    &:not(:last-child) {
-      margin-right: 6rem;
-    }
+    margin-right: 5rem;
   }
 
   // Class when you scroll page

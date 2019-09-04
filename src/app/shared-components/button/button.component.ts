@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ButtonComponent implements OnInit {
 
   @Input() buttonText: string;
-  @Input() isRed: boolean = true;
+  @Input() isDark: boolean = true;
 
   constructor() { }
 

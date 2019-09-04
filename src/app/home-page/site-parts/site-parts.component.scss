@@ -7,19 +7,23 @@
     padding: 4rem 12rem;
 
     &__wrapper {
-        background-color: orange;
         height: 100%;
-        box-shadow: 0 .5rem 6rem rgba($color-black , .2);
+        box-shadow: 0 .5rem 6rem rgba($color-primary-dark-1 , .2);
     }
 
     &__element {
         //border: 1px solid black;
         height: 33.333333%;
-        background-image: $gradient-red;
+        background-image: $gradient-white;
         position: relative;
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+
+        &:not(:last-child){
+            border-bottom: $my-border-bottom;
+        }
+        
         
 
         &--image {
@@ -38,10 +42,11 @@
             align-self: center;
             justify-self: center;
             text-align: center;
+            
 
             &-text {
-                font-size: 6rem;
-                color: $color-secondary;
+                font-size: $heading-h1-big;
+                color: $color-text;
                 margin: 2rem 0;
             }
         }

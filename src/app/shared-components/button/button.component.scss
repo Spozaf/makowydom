@@ -2,8 +2,8 @@
 @import "../../../sharedScss/mixins";
 
 .button {
-    height: 7rem;
-    width: 28rem;
+    height: 6rem;
+    width: 24rem;
     position: relative;
     display: inline-block;
     @include boxShadow;
@@ -37,8 +37,8 @@
     }
 }
 
-.btn-red {
-    background-color: $color-primary-dark-1;
+.btn-dark {
+    background-color: $color-text;
     color: $color-secondary;
 }
 
