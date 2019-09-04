@@ -1,0 +1,35 @@
+@import './../../sharedScss/variables';
+@import './../../sharedScss/mixins';
+
+.dla-gosci {
+    height: 90vh;
+
+    &__img{
+        background-image: url('./../../assets/images/dlagosci//danny-de-jong-Np5GnOfsfo0-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        position: relative;
+    }
+
+    &__text {
+        padding: 4rem;
+        background-color: $color-secondary;
+        @include center;
+        text-align: center;
+        color: $color-primary;
+
+        &--h1 {
+            font-size: 6rem;
+        }
+
+        &--h3 {
+            font-size: 2rem;
+        }
+
+
+    }
+    
+
+
+}

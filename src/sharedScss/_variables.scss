@@ -1,12 +1,20 @@
-$color-primary: #DF6F6F;
+$color-primary: #DE6F6F;
 $color-primary-dark-1: #D84F4F;
-$color-secondary: #FFFBFB;
+$color-secondary: #fcfdf9;
+$color-third: #247ba0;
 $color-white: white;
 $color-black: black;
+$color-text: #280f0f;
 
 $color-blue-light:#189ad3;
 $color-blue-dark:#107dac; 
 
 $section-break: 27rem;
 
-$gradient-red: linear-gradient(to right bottom, $color-primary, $color-primary-dark-1);
+$gradient-red: linear-gradient(135deg, rgba(222,111,111,0.5018207111946341) 0%, rgba(222,111,111,0.3001400389257265) 100%);
+$gradient-white: linear-gradient(135deg, rgba(252,253,249,1) 0%, rgba(255,255,255,1) 100%);
+
+$heading-h1: 3rem;
+$heading-h1-big: 4rem;
+$heading-h2: 2rem;
+$heading-h3: 1rem;

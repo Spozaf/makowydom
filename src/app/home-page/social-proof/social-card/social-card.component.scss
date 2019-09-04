@@ -2,15 +2,17 @@
 @import '../../../../sharedScss/mixins';
 
 .social-card {
-    background-color: $color-secondary;
+    background-image: $gradient-white;
+    border-bottom: .5rem solid $color-primary-dark-1;
     display: inline-block;
     height: 18.5rem;
     margin-top: 4rem;
     width: 22vw;
-    box-shadow: 0 .2rem .6rem rgba(#000000, .3);
+    box-shadow: 0px 0px 10px 4px rgba($color-text,0.2);
     padding: 2rem 2rem;
-    color: $color-primary;
-    border-radius: 3px;
+    color: $color-text;
+    //border-radius: 3px;
+    text-align: left;
 
     &__person {
         display: inline-block;
@@ -22,7 +24,7 @@
             background-color: $color-primary;
             border-radius: 50%;
             //border: 3px solid $color-primary;
-            box-shadow: 0 1rem 3rem rgba(#000000, .3);
+            box-shadow: 0 1rem 3rem rgba($color-text, .3);
             float: left;
             background-image: url('./../../../../assets/images/Sanja.jpg');
             background-size: cover;
@@ -34,7 +36,7 @@
             margin-top: .3rem;
             margin-left: 2rem;
             h1 {
-                font-size: 2.5rem;
+                font-size: $heading-h1;
                 font-weight: 400;
             }
 

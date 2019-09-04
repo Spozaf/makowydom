@@ -2,11 +2,11 @@
 
 @keyframes slideInFromDown {
   0% {
-    transform: translate(-50%, -2%);
+    transform: translateY(98%);
     opacity: 0;
   }
   100% {
-    transform: translate(-50%, -50%);
+    transform: translateY(50%);
     opacity: 1;
   }
 }
@@ -25,24 +25,26 @@
   position: relative;
 
   &__text-box {
-      
+    text-align: center;
+    transform: translateY(50%);
     animation: 3s ease-out .5s 1 forwards slideInFromDown;
-    //animation-delay: 1s;
-    position: absolute;
-    top: 37%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
+    // //animation-delay: 1s;
+    // position: absolute;
+    // top: 37%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // width: 100%;
     opacity: 0;
 
     &--img {
       width: 20rem;
-      transform: translate(6rem, 3.5rem);
+      display: inline-block;
+      transform: translateY(5rem);
     }
 
     &--heading {
       color: $color-white;
-      font-size: 18rem;
+      font-size: 12rem;
       display: inline-block;
     }
   }

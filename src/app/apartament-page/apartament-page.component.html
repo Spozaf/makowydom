@@ -1,15 +1,11 @@
 <section class="apartament">
     <div class="apartament__heading">
         <h1 class="apartament__heading--text">Apartament</h1>
-    </div>
-    <div class="apartament__carousel">
-        <ngx-slick-carousel [config]="slideConfig" class="apartament__carousel--slick">
-            <div ngxSlickItem *ngFor="let slide of slides">
-                <app-room-card></app-room-card>
-            </div>
-        </ngx-slick-carousel>
+        <h3 class="apartament__heading--invitation">Zapraszamy do śrdoka. Zobacz co dla Ciebie mamy!</h3>
     </div>
 </section>
 
 <app-call-to-action-mail></app-call-to-action-mail>
 <app-apartament-gallery></app-apartament-gallery>
+<app-social-proof></app-social-proof>
+

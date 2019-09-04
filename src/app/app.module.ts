@@ -22,6 +22,7 @@ import { ApartamentGalleryComponent } from './apartament-page/apartament-gallery
 import { OkolicaPageComponent } from './okolica-page/okolica-page.component';
 import { OkolicaGalleryComponent } from './okolica-page/okolica-gallery/okolica-gallery.component';
 import { OkolicaGalleryElementComponent } from './okolica-page/okolica-gallery/okolica-gallery-element/okolica-gallery-element.component';
+import { DlaGosciPageComponent } from './dla-gosci-page/dla-gosci-page.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { OkolicaGalleryElementComponent } from './okolica-page/okolica-gallery/o
     ApartamentGalleryComponent,
     OkolicaPageComponent,
     OkolicaGalleryComponent,
-    OkolicaGalleryElementComponent
+    OkolicaGalleryElementComponent,
+    DlaGosciPageComponent
   ],
   imports: [
     BrowserModule,

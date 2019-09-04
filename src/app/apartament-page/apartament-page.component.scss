@@ -1,14 +1,29 @@
 @import "../../sharedScss/variables";
+@import './../../sharedScss/mixins';
 
 .apartament{
     padding-top: 10rem;
+    background-image: url('./../../assets/images/apartament/DSC07680.JPG');
+    height: 85vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
 
     &__heading {
         text-align: center;
+        @include center;
+        background-color: rgba($color-primary, .7);
+        padding: 5rem;
+        border-radius: 3px;
 
         &--text {
-            color: $color-primary;
-            font-size: 7rem;
+            color: $color-secondary;
+            font-size: $heading-h1;
+        }
+
+        &--invitation {
+            color: $color-secondary;
+            font-size: $heading-h2;
         }
     }
 

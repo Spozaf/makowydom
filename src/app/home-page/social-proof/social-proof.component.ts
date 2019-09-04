@@ -22,11 +22,11 @@ export class SocialProofComponent implements OnInit {
   slideConfig = {
   //"centerPadding": '15.5rem',
   "centerMode": true,
-  "slidesToShow": 4, 
+  "slidesToShow": 3, 
   "slidesToScroll": 1,
   "infinite": true,
-  "autoplay": true,
-  "autoplaySpeed": 500,
+  //"autoplay": true,
+  //"autoplaySpeed": 500,
   //"dots": true,
   //"arrows": false,
   "speed": 3000

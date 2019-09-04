@@ -7,6 +7,9 @@
     grid-template-rows: 100%;
     grid-template-columns: 40% 55%;
     grid-column-gap: 5%;
+    //margin: 0px 5rem;
+    background-image: url('./../../../assets/images/dom2.JPG');
+    background-size: cover;
 
 
     &__photo {
@@ -21,21 +24,21 @@
 
     &__content {
         height: 100%;
-        //background-color: blue;
+        background-image: $gradient-white;
         display: grid;
         grid-template-rows: auto;
 
         &--name {
             text-align: center;
-            font-size: 5rem;
-            color: $color-primary-dark-1;
+            font-size: $heading-h1-big;
+            color: $color-text;
             font-weight: bold;
         }
 
         &--text {
             text-align: center;
-            font-size: 2rem;
-            color: $color-primary-dark-1;
+            font-size: $heading-h2;
+            color: $color-text;
             font-weight: normal;
             transform: translateY(-.7rem);
         }
@@ -52,8 +55,8 @@
             }
 
             &--text {
-                color: $color-primary-dark-1;
-                font-size: 3rem;
+                color: $color-text;
+                font-size: $heading-h2;
                 font-weight: bold;
             }
             
@@ -78,8 +81,8 @@
             }
 
             &--text{
-                color: $color-primary-dark-1;
-                font-size: 2rem;
+                color: $color-text;
+                font-size: $heading-h2;
                 font-weight: bold;
             }
         }

@@ -1,21 +1,21 @@
 @import "../../sharedScss/variables";
 
 %navbar-shared {
-  font-size: 3rem;
+  font-size: $heading-h1;
   position: fixed;
   z-index: 100;
 }
 
 %link-shared {
   text-decoration: none;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-weight: bolder;
   display: inline-block;
   transition: all .5s;
 }
 
 .navbar {
-  border-bottom: 1px solid rgba($color-primary, .5);
+  border-bottom: 1px solid rgba(#280f0f, .5);
 
   &__scroll-not {
     background-color: rgba($color-secondary, 0.2);
@@ -23,7 +23,8 @@
   }
 
   &__scroll {
-    background-color: rgba($color-secondary, 1);
+    //background-color: $color-secondary;
+    background-image: $gradient-white;
     @extend %navbar-shared;
   }
 
@@ -31,7 +32,7 @@
     list-style: none;
     width: 100vw;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1.4rem 0;
   }
 
   &__item {
@@ -45,13 +46,13 @@
   &__link--scroll {
     &:link,
     &:visited {
-      color: $color-primary;
+      color: #280f0f;
       @extend %link-shared;
     }
 
     &:hover,
     &:active {
-      color: rgba($color-primary, 1);
+      color: rgba(#280f0f, 1);
       transform: scale(1.05);
     }
   }
@@ -66,7 +67,7 @@
 
     &:hover,
     &:active {
-      color: rgba($color-primary, 0.8);
+      color: rgba($color-secondary, 1);
       transform: scale(1.05);
     }
   }
