@@ -23,6 +23,9 @@ import { OkolicaPageComponent } from './okolica-page/okolica-page.component';
 import { OkolicaGalleryComponent } from './okolica-page/okolica-gallery/okolica-gallery.component';
 import { OkolicaGalleryElementComponent } from './okolica-page/okolica-gallery/okolica-gallery-element/okolica-gallery-element.component';
 import { DlaGosciPageComponent } from './dla-gosci-page/dla-gosci-page.component';
+import { AtrakcjePageComponent } from './atrakcje-page/atrakcje-page.component';
+import { AtrakcjeGalleryComponent } from './atrakcje-page/atrakcje-gallery/atrakcje-gallery.component';
+import { AtrakcjeGalleryElementComponent } from './atrakcje-page/atrakcje-gallery/atrakcje-gallery-element/atrakcje-gallery-element.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { DlaGosciPageComponent } from './dla-gosci-page/dla-gosci-page.component
     OkolicaPageComponent,
     OkolicaGalleryComponent,
     OkolicaGalleryElementComponent,
-    DlaGosciPageComponent
+    DlaGosciPageComponent,
+    AtrakcjePageComponent,
+    AtrakcjeGalleryComponent,
+    AtrakcjeGalleryElementComponent
   ],
   imports: [
     BrowserModule,

@@ -2,26 +2,27 @@
 @import "../../../sharedScss/mixins";
 
 .call-to-action-mail {
-    background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark-1);
+    background-image: gradient-white;;
     height: $section-break;
     position: relative;
-    color: $color-secondary;
+    color: $color-text;
 
     &__info {
         @include center;
         font-weight: bold;
+        border-bottom: $my-border-bottom;
 
         &--write{
-            font-size: 4rem;
+            font-size: 3rem;
             transform: translateY(2rem);
         }
 
         &--email{
-            font-size: 7rem;
+            font-size: 6rem;
         }
 
         &--wait{
-            font-size: 3rem;
+            font-size: 2rem;
             text-align: right;
             transform: translateY(-1rem);
         }

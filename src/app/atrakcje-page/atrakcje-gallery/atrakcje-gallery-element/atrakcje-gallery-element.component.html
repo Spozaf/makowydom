@@ -1,0 +1,34 @@
+<div [ngClass]="{'grid-left': isLeft , 'grid-right': !isLeft}">
+    <div [ngClass]="{'grid-left__text': isLeft , 'grid-right__text': !isLeft}"class="grid__text">
+        <div [ngClass]="{'grid-left__text--wrapper': isLeft , 'grid-right__text--wrapper': !isLeft}">
+            <h1 [ngClass]="{'grid-left__text--h1': isLeft , 'grid-right__text--h1': !isLeft}">{{nazwa}}</h1>
+            <h3 [ngClass]="{'grid-left__text--h3': isLeft , 'grid-right__text--h3': !isLeft}">{{elementOne}}</h3>
+            <h3 [ngClass]="{'grid-left__text--h3': isLeft , 'grid-right__text--h3': !isLeft}">{{elementTwo}}</h3>
+            <h3 [ngClass]="{'grid-left__text--h3': isLeft , 'grid-right__text--h3': !isLeft}">{{elementThree}}</h3>
+        </div>
+
+    </div>
+    <div 
+    [ngClass]="{'grid-left__photo-1': isLeft , 'grid-right__photo-1': !isLeft}"
+    [ngStyle]="{
+        'background-image': 'url('+photoOne+')', 
+        'background-position' : ''+photoOnePosition+''}"></div>
+    <div 
+    [ngClass]="{'grid-left__photo-2': isLeft , 'grid-right__photo-2': !isLeft}"
+    [ngStyle]="{'background-image': 'url('+photoTwo+')',
+    'background-position' : ''+photoTwoPosition+''}"></div>
+    <div 
+    [ngClass]="{'grid-left__photo-3': isLeft , 'grid-right__photo-3': !isLeft}"
+    [ngStyle]="{'background-image': 'url('+photoThree+')',
+    'background-position' : ''+photoThreePosition+''}"></div>
+    <div 
+    [ngClass]="{'grid-left__photo-4': isLeft , 'grid-right__photo-4': !isLeft}"
+    [ngStyle]="{
+        'background-image': 'url('+photoFour+')',
+        'background-position' : ''+photoFourPosition+''}"
+        ></div>
+    <div 
+    [ngClass]="{'grid-left__photo-5': isLeft , 'grid-right__photo-5': !isLeft}"
+    [ngStyle]="{'background-image': 'url('+photoFive+')', 
+    'background-position' : ''+photoFivePosition+''}"></div>
+</div>
