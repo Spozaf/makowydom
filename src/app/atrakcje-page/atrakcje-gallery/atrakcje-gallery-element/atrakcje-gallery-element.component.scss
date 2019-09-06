@@ -13,18 +13,19 @@
 
     &__text{
         grid-area: T;
-        background-color: $color-primary;
+        //background-color: $color-primary;
         position: relative;
-        color: $color-secondary;
+        color: $color-text;
+        border-bottom: $my-border-bottom;
         &--wrapper{
             @include center;
         }
         
         &--h1 {
-            font-size: 6rem;
+            font-size: 5rem;
         }
         &--h3 {
-            font-size: 1.7rem;
+            font-size: 1.4rem;
             margin-top: .7rem;
         }
     }
@@ -63,18 +64,19 @@
 
     &__text{
         grid-area: T;
-        background-color: $color-primary;
+        //background-color: $color-primary;
         position: relative;
-        color: $color-secondary;
+        color: $color-text;
+        border-top: $my-border-bottom;
         &--wrapper{
             @include center;
         }
         
         &--h1 {
-            font-size: 6rem;
+            font-size: 5rem;
         }
         &--h3 {
-            font-size: 1.7rem;
+            font-size: 1.4rem;
             margin-top: .7rem;
         }
     }

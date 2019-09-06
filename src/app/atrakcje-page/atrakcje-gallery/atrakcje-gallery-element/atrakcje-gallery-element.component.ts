@@ -6,15 +6,15 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./atrakcje-gallery-element.component.scss']
 })
 export class AtrakcjeGalleryElementComponent implements OnInit {
-  @Input() photoOne: string = './../../../../assets/images/Okolica/Miasta/wieliczka1.jpg';
+  @Input() photoOne: string = './../../../../assets/images/dlagosci/jedzenie.jpg';
   @Input() photoOnePosition: string = 'center bottom';
-  @Input() photoTwo: string = './../../../../assets/images/Okolica/Miasta/krakow1.jpg';
+  @Input() photoTwo: string = './../../../../assets/images/dlagosci/ogien1.jpg';
   @Input() photoTwoPosition: string = 'center center';
-  @Input() photoThree: string = './../../../../assets/images/Okolica/Miasta/krakow2.jpg';
+  @Input() photoThree: string = './../../../../assets/images/dlagosci/grill2.JPG';
   @Input() photoThreePosition: string = 'center center';
-  @Input() photoFour: string = './../../../../assets/images/Okolica/Miasta/nowysacz1.jpg';
+  @Input() photoFour: string = './../../../../assets/images/dlagosci/salatka1.JPG';
   @Input() photoFourPosition: string = 'center center';
-  @Input() photoFive: string = './../../../../assets/images/Okolica/Miasta/wieliczka2.jpg';
+  @Input() photoFive: string = './../../../../assets/images/dlagosci/ogien2.jpg';
   @Input() photoFivePosition: string = 'center center';
   @Input() isLeft: boolean = true;
   @Input() nazwa: string;

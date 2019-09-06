@@ -82,32 +82,32 @@
 .apartament {
   &__room {
     &--salon {
-      background-image: url("./../../assets/images/apartament/salon.JPG");
+      background-image: url("./../../assets/images/apartament/salonnew.JPG");
       border-left: $my-border-bottom;
       border-bottom: $my-border-bottom;
       @extend %apartament-room;
       margin-top: 0px;
     }
     &--kuchnia {
-      background-image: url("./../../assets/images/apartament/kuchnia.JPG");
+      background-image: url("./../../assets/images/apartament/kuchnianew.JPG");
       border-top: $my-border-bottom;
       border-right: $my-border-bottom;
       @extend %apartament-room;
     }
     &--pokoj {
-      background-image: url("./../../assets/images/apartament/pokoj.JPG");
+      background-image: url("./../../assets/images/apartament/pokojnew.JPG");
       @extend %apartament-room;
       border-left: $my-border-bottom;
       border-bottom: $my-border-bottom;
     }
     &--balkon {
-      background-image: url("./../../assets/images/apartament/taras-web.jpg");
+      background-image: url("./../../assets/images/apartament/tarasnew.jpg");
       @extend %apartament-room;
       border-top: $my-border-bottom;
       border-right: $my-border-bottom;
     }
     &--lazienka {
-      background-image: url("./../../assets/images/apartament/lazienka-web.jpg");
+      background-image: url("./../../assets/images/apartament/lazeinkanew.jpg");
       @extend %apartament-room;
       border-bottom: $my-border-bottom;
       border-left: $my-border-bottom;
