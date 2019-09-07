@@ -20,12 +20,12 @@ import { RoomCardComponent } from './apartament-page/room-card/room-card.compone
 import { CallToActionMailComponent } from './shared-components/call-to-action-mail/call-to-action-mail.component';
 import { ApartamentGalleryComponent } from './apartament-page/apartament-gallery/apartament-gallery.component';
 import { OkolicaPageComponent } from './okolica-page/okolica-page.component';
-import { OkolicaGalleryComponent } from './okolica-page/okolica-gallery/okolica-gallery.component';
-import { OkolicaGalleryElementComponent } from './okolica-page/okolica-gallery/okolica-gallery-element/okolica-gallery-element.component';
 import { DlaGosciPageComponent } from './dla-gosci-page/dla-gosci-page.component';
 import { AtrakcjePageComponent } from './atrakcje-page/atrakcje-page.component';
 import { AtrakcjeGalleryComponent } from './atrakcje-page/atrakcje-gallery/atrakcje-gallery.component';
 import { AtrakcjeGalleryElementComponent } from './atrakcje-page/atrakcje-gallery/atrakcje-gallery-element/atrakcje-gallery-element.component';
+import { OkolicaMiejsceComponent } from './okolica-page/okolica-miejsce/okolica-miejsce.component';
+import { CennikPageComponent } from './cennik-page/cennik-page.component';
 
 @NgModule({
   declarations: [
@@ -45,12 +45,12 @@ import { AtrakcjeGalleryElementComponent } from './atrakcje-page/atrakcje-galler
     CallToActionMailComponent,
     ApartamentGalleryComponent,
     OkolicaPageComponent,
-    OkolicaGalleryComponent,
-    OkolicaGalleryElementComponent,
     DlaGosciPageComponent,
     AtrakcjePageComponent,
     AtrakcjeGalleryComponent,
-    AtrakcjeGalleryElementComponent
+    AtrakcjeGalleryElementComponent,
+    OkolicaMiejsceComponent,
+    CennikPageComponent
   ],
   imports: [
     BrowserModule,

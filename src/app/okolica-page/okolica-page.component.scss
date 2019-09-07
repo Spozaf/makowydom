@@ -1,83 +1,57 @@
 @import "../../sharedScss/variables";
-
+@import './../../sharedScss/mixins';
 .okolica{
-    padding-top: 9rem;
-    height: 95vh;
-    background-color: $color-secondary;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
 
-    &__grid {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "Text Text Forest Cracov Cracov" 
-        "Text Text Wielicka Mountain Sanctuary" 
-        "Text Text Wielicka Nowysacz Tower";
-        grid-gap: 1rem 1rem;
+    &__miejsce{
+        height: 95vh;
+        position: relative;
+        display: flex;
+        padding: 5rem;
+        color: $color-text;
+        &--zdjecie-krakow{
+            //display: inline-block;
+            width: 60%;
+            height: 100%;
+            background-image: url('./../../assets/images/Okolica/krakow.jpg');
+            background-size: cover;
 
-        &--text {
-            grid-area: Text;
-            color: $color-primary;
-            text-align: center;
-            padding: 3rem;
-
-            &-heading-small {
-                display: inline-block;
-                font-size: 3.7rem;
-                border-bottom: .3rem solid $color-primary;
-            }
-
-            &-heading-big {
-                font-size: 7rem;
-                margin-top: 3rem;
-            }
         }
 
-        &--photo {
-            &-forest {
-                grid-area: Forest;
-                background-image: url(../../assets/images/Okolica/salasz.jpg);
-                background-size: cover;
+        &--opis{
+            width: 40%;
+            height: 100%;
+            //display: inline-block;
+            //: right;
+            position: relative;
+            border-bottom: $my-border-bottom;
+            margin-left: 1rem;
+            &-wrapper{
+                position: absolute;
+                @include center; 
+                width: 90%;
+                text-align: center
+            }
+            &-h1{
+                font-size: $heading-h1-big;
+                margin-bottom: 2rem;
+            }
+            &-p{
+                font-size: $heading-h2;
+                text-align: justify;
             }
 
-            &-cracov {
-                grid-area: Cracov;
-                background-image: url(../../assets/images/Okolica/krakow.jpg);
-                background-size: cover;
-                background-position: bottom;
-            }
-
-            &-wielicka {
-                grid-area: Wielicka;
-                background-image: url(../../assets/images/Okolica/wieliczka.jpg);
-                background-size: cover;
-                background-position: bottom;
-            }
-            &-mountain {
-                grid-area: Mountain;
-                background-image: url(../../assets/images/HomePageImage.jpg);
-                background-size: cover;
-
-            }
-            &-sanctuary {
-                grid-area: Sanctuary;
-                background-image: url(../../assets/images/Okolica/pasierbiec.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            &-nowysacz {
-                grid-area: Nowysacz;
-                background-image: url(../../assets/images/Okolica/nowysacz.jpg);
-                background-size: cover;
-            }
-            &-tower {
-                grid-area: Tower;
-                background-image: url(../../assets/images/Okolica/mogielica.jpg);
-                background-size: cover;
+            &-icona{
+                margin-top: 2rem;
+                img{
+                    width: 9.5rem;
+                }
+               p{
+                   font-size: 1.5rem;
+                   transform: translateY(-3rem);
+               }
             }
         }
     }
+    
+
 }

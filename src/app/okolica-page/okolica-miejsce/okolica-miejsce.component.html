@@ -1,0 +1,18 @@
+<div [ngClass]="{'miejsce': imgIsLeft , 'miejsce-right': !imgIsLeft}">
+        <div class="miejsce--zdjecie" 
+            [style.backgroundImage]="'url('+ backgroundImage +')'"> 
+        </div>
+        <div class="miejsce--opis">
+            <div class="miejsce--opis-wrapper">
+                <h1 class="miejsce--opis-h1">{{name}}</h1>
+                <p class="miejsce--opis-p">
+                    {{opis}}
+                </p>
+                <div class="miejsce--opis-icona">
+                    <img src="./../../assets/images/car.png" alt="">
+                    <p>{{czas}}min</p>
+                </div>
+            </div>
+
+        </div>
+    </div>

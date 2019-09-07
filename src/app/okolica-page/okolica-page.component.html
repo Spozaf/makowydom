@@ -1,22 +1,50 @@
 <section class="okolica">
-    <div class="okolica__grid">
-        <div class="okolica__grid--text">
-            <h3 class="okolica__grid--text-heading-small">
-                Okolica <br>
-                Makowego Domu
-            </h3>
-            <h1 class="okolica__grid--text-heading-big">Miasta</h1>
-            <h1 class="okolica__grid--text-heading-big">Atrakcje</h1>
-            <h1 class="okolica__grid--text-heading-big">Szczyty</h1>
-        </div>
-        <div class="okolica__grid--photo-forest"></div>
-        <div class="okolica__grid--photo-cracov"></div>
-        <div class="okolica__grid--photo-wielicka"></div>
-        <div class="okolica__grid--photo-mountain"></div>
-        <div class="okolica__grid--photo-sanctuary"></div>
-        <div class="okolica__grid--photo-nowysacz"></div>
-        <div class="okolica__grid--photo-tower"></div>
-    </div>
+    <app-okolica-miejsce></app-okolica-miejsce>
+
+    <app-okolica-miejsce  [imgIsLeft]='false'
+    name='Szczyty'
+    backgroundImage='./../../assets/images/Okolica/szczyty/paproc2.jpg'
+    czas='10'
+    opis='{{szczyty}}'></app-okolica-miejsce>
+
+    <app-okolica-miejsce
+    name='Wieliczka'
+    backgroundImage='./../../assets/images/Okolica/Miasta/wieliczka1.jpg'
+    czas='50'
+    opis='{{wieliczka}}'></app-okolica-miejsce>
+
+    <app-call-to-action-phone></app-call-to-action-phone>
+
+    <app-okolica-miejsce  [imgIsLeft]='false'
+    name='Zakopane'
+    backgroundImage='./../../assets/images/Okolica/Miasta/zakopane.jpg'
+    czas='75'
+    opis='{{zakopane}}'></app-okolica-miejsce>
+
+    <app-okolica-miejsce 
+    name='Stacje narciarskie'
+    backgroundImage='./../../assets/images/Okolica/Atrakcje/limanowaski2.jpg'
+    czas='10'
+    opis='{{stacje}}'></app-okolica-miejsce>
+
+    <app-okolica-miejsce  [imgIsLeft]='false'
+    name='Rabkoland'
+    backgroundImage='./../../assets/images/Okolica/Atrakcje/rabkoland1.jpg'
+    czas='40'
+    opis='{{rabkoland}}'></app-okolica-miejsce>
+    
+    <app-call-to-action-mail></app-call-to-action-mail>
+    
+    <app-okolica-miejsce 
+    name='Szaflary'
+    backgroundImage='./../../assets/images/Okolica/Miasta/szaflary.jpg'
+    czas='55'
+    opis='{{szaflary}}'></app-okolica-miejsce>
+    
+    <app-okolica-miejsce [imgIsLeft]='false'
+    name='Nowy Sącz'
+    backgroundImage='./../../assets/images/Okolica/Miasta/nowysacz1.jpg'
+    czas='30'
+    opis='{{nowysacz}}'></app-okolica-miejsce>
+    <app-social-proof></app-social-proof>
 </section>
-<app-call-to-action-phone></app-call-to-action-phone>
-<app-okolica-gallery></app-okolica-gallery>

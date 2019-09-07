@@ -25,8 +25,8 @@ export class SocialProofComponent implements OnInit {
   "slidesToShow": 3, 
   "slidesToScroll": 1,
   "infinite": true,
-  //"autoplay": true,
-  //"autoplaySpeed": 500,
+  "autoplay": true,
+  "autoplaySpeed": 3000,
   //"dots": true,
   //"arrows": false,
   "speed": 3000

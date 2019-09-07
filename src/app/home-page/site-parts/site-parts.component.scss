@@ -8,7 +8,7 @@
 
     &__wrapper {
         height: 100%;
-        box-shadow: 0 .5rem 6rem rgba($color-primary-dark-1 , .2);
+        box-shadow: $my-box-shadow;
     }
 
     &__element {

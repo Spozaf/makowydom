@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OkolicaGalleryComponent } from './okolica-gallery.component';
+import { CennikPageComponent } from './cennik-page.component';
 
-describe('OkolicaGalleryComponent', () => {
-  let component: OkolicaGalleryComponent;
-  let fixture: ComponentFixture<OkolicaGalleryComponent>;
+describe('CennikPageComponent', () => {
+  let component: CennikPageComponent;
+  let fixture: ComponentFixture<CennikPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OkolicaGalleryComponent ]
+      declarations: [ CennikPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OkolicaGalleryComponent);
+    fixture = TestBed.createComponent(CennikPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
