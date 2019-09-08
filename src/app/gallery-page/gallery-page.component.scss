@@ -1,0 +1,10 @@
+@import './../../sharedScss/variables';
+
+.gallery{
+    padding: 10rem;
+
+    ::ng-deep .ngx-gallery-icon{
+        color: $color-primary-dark-1;
+    }
+
+}

@@ -25,6 +25,8 @@ import { AtrakcjeGalleryComponent } from './atrakcje-page/atrakcje-gallery/atrak
 import { AtrakcjeGalleryElementComponent } from './atrakcje-page/atrakcje-gallery/atrakcje-gallery-element/atrakcje-gallery-element.component';
 import { OkolicaMiejsceComponent } from './okolica-page/okolica-miejsce/okolica-miejsce.component';
 import { CennikPageComponent } from './cennik-page/cennik-page.component';
+import { NgxGalleryModule } from 'ngx-gallery';
+import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 
 @NgModule({
   declarations: [
@@ -48,12 +50,14 @@ import { CennikPageComponent } from './cennik-page/cennik-page.component';
     AtrakcjeGalleryComponent,
     AtrakcjeGalleryElementComponent,
     OkolicaMiejsceComponent,
-    CennikPageComponent
+    CennikPageComponent,
+    GalleryPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule
+    SlickCarouselModule,
+    NgxGalleryModule
   ],
   providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
