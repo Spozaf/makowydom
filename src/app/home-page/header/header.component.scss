@@ -12,8 +12,6 @@
 }
 
 .header {
-  //font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif;
-  // background-color: orange;
   background-image: linear-gradient(
       to right bottom,
       rgba($color-blue-light, 0.4),
@@ -28,12 +26,6 @@
     text-align: center;
     transform: translateY(50%);
     animation: 3s ease-out .5s 1 forwards slideInFromDown;
-    // //animation-delay: 1s;
-    // position: absolute;
-    // top: 37%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    // width: 100%;
     opacity: 0;
 
     &--img {

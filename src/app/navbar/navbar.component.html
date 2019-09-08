@@ -1,43 +1,35 @@
 <div class="navbar" [ngClass]="{'navbar__scroll' : !navbarTransparent, 'navbar__scroll-not' : navbarTransparent}">
     <ul class="navbar__list">
         <li class="navbar__item">
-            <a 
-            [routerLink]="[ '/' ]" 
-            [ngClass]="{
+            <a [routerLink]="[ '/' ]" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
-                'navbar__link--scroll-not' : navbarTransparent}"
-                >Makowy dom</a>
-            </li>
+                'navbar__link--scroll-not' : navbarTransparent}">Makowy dom</a>
+        </li>
+
         <li class="navbar__item">
-            <a routerLink="/galeria" [ngClass]="{
+            <a routerLink="/apartament" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
-                'navbar__link--scroll-not' : navbarTransparent}">Galeria</a>
-            </li>
-        <li class="navbar__item">
-            <a 
-            routerLink="/apartament"
-            [ngClass]="{
-                'navbar__link--scroll' : !navbarTransparent, 
-                'navbar__link--scroll-not' : navbarTransparent}"
-            >Apartament</a>
-            </li>
+                'navbar__link--scroll-not' : navbarTransparent}">Apartament</a>
+        </li>
         <li class="navbar__item">
             <a routerLink="/atrakcje" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
                 'navbar__link--scroll-not' : navbarTransparent}">Atrakcje</a>
-            </li>
+        </li>
         <li class="navbar__item">
-            <a 
-            routerLink="/okolica" 
-            [ngClass]="{
+            <a routerLink="/okolica" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
                 'navbar__link--scroll-not' : navbarTransparent}">Okolica</a>
-            </li>
+        </li>
         <li class="navbar__item">
-            <a routerLink="/cennik" 
-             [ngClass]="{
+            <a routerLink="/galeria" [ngClass]="{
+                    'navbar__link--scroll' : !navbarTransparent, 
+                    'navbar__link--scroll-not' : navbarTransparent}">Galeria</a>
+        </li>
+        <li class="navbar__item">
+            <a routerLink="/cennik" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
                 'navbar__link--scroll-not' : navbarTransparent}">Cennik</a>
-            </li>
+        </li>
     </ul>
 </div>

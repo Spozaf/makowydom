@@ -17,7 +17,7 @@
         height: 100%;
         width: 100%;
         //background-color: red;
-        background-image: url(./../../../assets/images/main-page//dom2-min.JPG);
+        background-image: url('./../../../assets/images/main-page/dom2-min.JPG');
         background-size: cover;
         margin-right: 5rem;
         box-shadow: 0 1rem 3rem rgba(black, .3);
@@ -48,12 +48,10 @@
 
         &--four-people {
             text-align: center;
-            //margin-top: 2rem;
             &--icon {
 
                 img {
                     height: 4rem;    
-                    //display: inline-block;
                 }
             }
 
@@ -70,7 +68,6 @@
             list-style: none;
             width: 100%;
             text-align: center;
-            //padding: 2rem 0;
         }
 
         &--info-item{
