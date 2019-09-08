@@ -1,62 +1,6 @@
 @import "../../sharedScss/variables";
 @import "./../../sharedScss/mixins";
 
-// .apartament{
-//     padding-top: 10rem;
-//     background-image: url('./../../assets/images/apartament/DSC07680.JPG');
-//     height: 85vh;
-//     background-size: cover;
-//     background-position: center;
-//     position: relative;
-
-//     &__heading {
-//         text-align: center;
-//         @include center;
-//         background-color: rgba($color-primary, .7);
-//         padding: 5rem;
-//         border-radius: 3px;
-
-//         &--text {
-//             color: $color-secondary;
-//             font-size: $heading-h1;
-//         }
-
-//         &--invitation {
-//             color: $color-secondary;
-//             font-size: $heading-h2;
-//         }
-//     }
-
-//     &__carousel {
-
-//         &--slick {
-//             margin: 4rem auto;
-//         }
-
-//         ::ng-deep button {
-//             transform: translate(0, 1.2rem);
-//             top: 100%;
-
-//             &.slick-prev {
-//                 left: 1rem;
-
-//                 &::before {
-//                     color: $color-primary;
-//                 }
-//             }
-
-//             &.slick-next {
-//                 right: 1rem;
-
-//                 &::before {
-//                     color: $color-primary;
-//                 }
-//             }
-//         }
-//     }
-
-// }
-
 %apartament-room {
   background-size: cover;
   height: 95vh;
@@ -82,32 +26,32 @@
 .apartament {
   &__room {
     &--salon {
-      background-image: url("./../../assets/images/apartament/salonnew.JPG");
+      background-image: url("./../../assets/images/apartament/salonnew-min.jpg");
       border-left: $my-border-bottom;
       border-bottom: $my-border-bottom;
       @extend %apartament-room;
       margin-top: 0px;
     }
     &--kuchnia {
-      background-image: url("./../../assets/images/apartament/kuchnianew.JPG");
+      background-image: url("./../../assets/images/apartament/kuchnianew-min.JPG");
       border-top: $my-border-bottom;
       border-right: $my-border-bottom;
       @extend %apartament-room;
     }
     &--pokoj {
-      background-image: url("./../../assets/images/apartament/pokojnew.JPG");
+      background-image: url("./../../assets/images/apartament/pokojnew-min.JPG");
       @extend %apartament-room;
       border-left: $my-border-bottom;
       border-bottom: $my-border-bottom;
     }
     &--balkon {
-      background-image: url("./../../assets/images/apartament/tarasnew.jpg");
+      background-image: url("./../../assets/images/apartament/tarasnew-min.jpg");
       @extend %apartament-room;
       border-top: $my-border-bottom;
       border-right: $my-border-bottom;
     }
     &--lazienka {
-      background-image: url("./../../assets/images/apartament/lazeinkanew.jpg");
+      background-image: url("./../../assets/images/apartament/lazeinkanew-min.jpg");
       @extend %apartament-room;
       border-bottom: $my-border-bottom;
       border-left: $my-border-bottom;

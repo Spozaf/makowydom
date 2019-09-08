@@ -1,17 +1,17 @@
 <div class="social-card">
     <div class="social-card__person">
-        <div class="social-card__person--photo">
+        <div class="social-card__person--photo" [style.backgroundImage]="'url('+ backgroundImage +')'">
             &nbsp;
         </div>
         <div class="social-card__person--info">
-            <h1>Sonia</h1>
+            <h1>{{imie}}</h1>
             <br>
-            <h3>Przyjazd z rodziną</h3>
+            <h3>{{cel}}</h3>
         </div>
     </div>
     <div class="social-card__revwiev">
         <p class="social-card__revwiev--text">
-            Piękne miejsce. Bardzo komfortowo się tam czuliśmy.
+            {{opinia}}
         </p>
     </div>
 </div>

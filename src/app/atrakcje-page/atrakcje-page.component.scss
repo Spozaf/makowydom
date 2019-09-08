@@ -1,90 +1,97 @@
 @import "../../sharedScss/variables";
 
-.atrakcje{
-    padding-top: 9rem;
-    height: 95vh;
-    background-color: $color-secondary;
-    margin-bottom: 5rem;
-    margin-right: 1rem;
+.atrakcje {
+  padding-top: 9rem;
+  height: 95vh;
+  background-color: $color-secondary;
+  margin-bottom: 5rem;
+  margin-right: 1rem;
 
-    &__grid {
-        height: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: 
-        "Text Text Forest Cracov Cracov" 
-        "Text Text Wielicka Mountain Sanctuary" 
-        "Text Text Wielicka Nowysacz Tower";
-        grid-gap: 1rem 1rem;
+  &__grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "Text Text Forest Cracov Cracov"
+      "Text Text Wielicka Mountain Sanctuary"
+      "Text Text Wielicka Nowysacz Tower";
+    grid-gap: 1rem 1rem;
 
-        &--text {
-            grid-area: Text;
-            color: $color-text;
-            text-align: center;
-            padding: 3rem;
+    &--text {
+      grid-area: Text;
+      color: $color-text;
+      text-align: center;
+      padding: 3rem;
 
-            &-heading-small {
-                display: inline-block;
-                font-size: 4.5rem;
-                border-bottom: $my-border-bottom;
-            }
+      &-heading-small {
+        display: inline-block;
+        font-size: 4.5rem;
+        border-bottom: $my-border-bottom;
+      }
 
-            &-heading-big {
-                font-size: 4rem;
-                margin-top: 3rem;
-            }
+      &-heading-big {
+        font-size: 4rem;
+        margin-top: 3rem;
+        a {
+          text-decoration: none;
+          color: #280f0f;
+          transition: all .2s;
+          &:hover{
+            border-bottom: $my-border-bottom;
+          }
         }
-
-        &--photo {
-            &-forest {
-                grid-area: Forest;
-                background-image: url(../../assets/images/Okolica/salasz.jpg);
-                background-size: cover;
-            }
-
-            &-cracov {
-                grid-area: Cracov;
-                background-image: url(../../assets/images/dlagosci/jedzenie.jpg);
-                background-size: cover;
-                background-position: bottom;
-            }
-
-            &-wielicka {
-                grid-area: Wielicka;
-                background-image: url(../../assets/images/dlagosci/ogien2.jpg);
-                background-size: cover;
-                background-position: bottom;
-            }
-            &-mountain {
-                grid-area: Mountain;
-                background-image: url(../../assets/images/HomePageImage.jpg);
-                background-size: cover;
-
-            }
-            &-sanctuary {
-                grid-area: Sanctuary;
-                background-image: url(../../assets/images/dlagosci/main/grzyby.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            &-nowysacz {
-                grid-area: Nowysacz;
-                background-image: url(../../assets/images/dlagosci/main/grzyby2.jpg);
-                background-size: cover;
-            }
-            &-tower {
-                grid-area: Tower;
-                background-image: url(../../assets/images/dlagosci/main/gry.JPG);
-                background-size: cover;
-            }
-        }
+      }
     }
+
+    &--photo {
+      &-forest {
+        grid-area: Forest;
+        background-image: url(../../assets/images/dlagosci/main/salasz-min.jpg);
+        background-size: cover;
+      }
+
+      &-cracov {
+        grid-area: Cracov;
+        background-image: url(../../assets/images/dlagosci/grill/jedzenie-min.jpg);
+        background-size: cover;
+        background-position: bottom;
+      }
+
+      &-wielicka {
+        grid-area: Wielicka;
+        background-image: url(../../assets/images/dlagosci/grill/ogien2-min.jpg);
+        background-size: cover;
+        background-position: bottom;
+      }
+      &-mountain {
+        grid-area: Mountain;
+        background-image: url(../../assets/images/main-page/HomePageImage-min.jpg);
+        background-size: cover;
+      }
+      &-sanctuary {
+        grid-area: Sanctuary;
+        background-image: url(../../assets/images/dlagosci/main/grzyby-min.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      &-nowysacz {
+        grid-area: Nowysacz;
+        background-image: url(../../assets/images/dlagosci/main/grzyby2-min.jpg);
+        background-size: cover;
+      }
+      &-tower {
+        grid-area: Tower;
+        background-image: url(../../assets/images/dlagosci/main/gry-min.JPG);
+        background-size: cover;
+      }
+    }
+  }
 }
 
-hr{
-    border-top: $my-border-bottom;
-    color: $color-primary-dark-1;
-    width: 90%;
-    margin: 0 5% 0 5%
+hr {
+  border-top: $my-border-bottom;
+  color: $color-primary-dark-1;
+  width: 90%;
+  margin: 0 5% 0 5%;
 }

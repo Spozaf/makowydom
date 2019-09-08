@@ -2,7 +2,7 @@
 @import "./../../../sharedScss/mixins";
 
 %miejsce-basic {
-  height: 95vh;
+  height: 90vh;
   position: relative;
   display: flex;
   padding: 5rem;
@@ -10,7 +10,7 @@
   .miejsce--zdjecie {
     width: 60%;
     height: 100%;
-    background-image: url("./../../../assets/images/Okolica/krakow.jpg");
+    //background-image: url("./../../../assets/images/Okolica/krakow.jpg");
     background-size: cover;
     box-shadow: $my-box-shadow;
   }
@@ -57,55 +57,3 @@
     @extend %miejsce-basic;
     flex-direction: row-reverse;
   }
-
-// .okolica {
-//   &__miejsce {
-//     height: 95vh;
-//     position: relative;
-//     display: flex;
-//     padding: 5rem;
-//     color: $color-text;
-//     &--zdjecie-krakow {
-//       //display: inline-block;
-//       width: 60%;
-//       height: 100%;
-//       background-image: url("./../../../assets/images/Okolica/krakow.jpg");
-//       background-size: cover;
-//     }
-
-//     &--opis {
-//       width: 40%;
-//       height: 100%;
-//       //display: inline-block;
-//       //: right;
-//       position: relative;
-//       border-bottom: $my-border-bottom;
-//       margin: 0px 1rem;
-//       &-wrapper {
-//         position: absolute;
-//         @include center;
-//         width: 90%;
-//         text-align: center;
-//       }
-//       &-h1 {
-//         font-size: $heading-h1-big;
-//         margin-bottom: 2rem;
-//       }
-//       &-p {
-//         font-size: $heading-h2;
-//         text-align: justify;
-//       }
-
-//       &-icona {
-//         margin-top: 2rem;
-//         img {
-//           width: 9.5rem;
-//         }
-//         p {
-//           font-size: 1.5rem;
-//           transform: translateY(-3rem);
-//         }
-//       }
-//     }
-//   }
-// }

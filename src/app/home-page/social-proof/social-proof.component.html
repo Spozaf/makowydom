@@ -1,7 +1,7 @@
 <div class="social-proof">
     <ngx-slick-carousel [config]="slideConfig" class="carousel">
         <div ngxSlickItem *ngFor="let slide of slides">
-            <app-social-card></app-social-card>
+            <app-social-card backgroundImage={{slide.img}} imie={{slide.name}} portal={{slide.portal}} opinia={{slide.opinia}}></app-social-card>
         </div>
     </ngx-slick-carousel>
 </div>
