@@ -5,13 +5,15 @@ import { ApartamentPageComponent } from './apartament-page/apartament-page.compo
 import { OkolicaPageComponent } from './okolica-page/okolica-page.component';
 import { DlaGosciPageComponent } from './dla-gosci-page/dla-gosci-page.component';
 import { AtrakcjePageComponent } from './atrakcje-page/atrakcje-page.component';
+import { CennikPageComponent } from './cennik-page/cennik-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'apartament', component: ApartamentPageComponent },
   { path: 'okolica', component: OkolicaPageComponent },
   { path: 'dla-gosci', component: DlaGosciPageComponent },
-  { path: 'atrakcje', component: AtrakcjePageComponent }
+  { path: 'atrakcje', component: AtrakcjePageComponent },
+  { path: 'cennik', component: CennikPageComponent }
 ];
 
 @NgModule({

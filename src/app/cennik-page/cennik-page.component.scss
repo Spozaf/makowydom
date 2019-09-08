@@ -1,0 +1,85 @@
+@import './../../sharedScss/mixins';
+@import './../../sharedScss/variables';
+
+.cena{
+    padding: 10rem;
+    color: $color-text;
+    text-align: center;
+    background-image: url(./../../assets/images/HomePageImage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    &__wrapper{
+        width: 80vw;
+        background-color: rgba($color-secondary, .7);
+        padding: 5rem 0px;
+    }
+
+    &__50{
+        border-bottom: $my-border-bottom;
+    }
+
+    &__hr{
+        width: 30%;
+        border-top: $my-border-bottom;
+        margin: 5rem 35% 5rem 35%;
+        color: $color-primary-dark-1;
+    }
+    &__h1{
+        font-size: $heading-h1-big;
+        @extend %text-gradient;
+    }
+
+    &__h2{
+        font-size: $heading-h1;
+    }
+    &__h3{
+        font-size: $heading-h2;
+    }
+    &__pln{
+        margin-bottom: 3rem;
+    }
+
+
+    &__logo-wrapper{
+        img{
+            width: 20rem;
+        }
+    }
+
+    &__osoby{
+        &--icon{
+            img{
+                height: 8rem;
+            }
+        }
+        &--text{
+            font-size: $heading-h1;
+            font-weight: bold;
+        }
+    }
+
+    &__info-list{
+        list-style: none;
+            width: 100%;
+            text-align: center;
+    }
+
+    &__info-item{
+        display: inline-block;
+            &:not(:last-child) {
+              margin-right: 2rem;
+            }
+
+            img {
+                height: 9rem;
+            }
+
+            &--text{
+                color: $color-text;
+                font-size: $heading-h2;
+                font-weight: bold;
+            }
+    }
+}

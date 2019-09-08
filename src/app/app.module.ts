@@ -20,7 +20,6 @@ import { RoomCardComponent } from './apartament-page/room-card/room-card.compone
 import { CallToActionMailComponent } from './shared-components/call-to-action-mail/call-to-action-mail.component';
 import { ApartamentGalleryComponent } from './apartament-page/apartament-gallery/apartament-gallery.component';
 import { OkolicaPageComponent } from './okolica-page/okolica-page.component';
-import { DlaGosciPageComponent } from './dla-gosci-page/dla-gosci-page.component';
 import { AtrakcjePageComponent } from './atrakcje-page/atrakcje-page.component';
 import { AtrakcjeGalleryComponent } from './atrakcje-page/atrakcje-gallery/atrakcje-gallery.component';
 import { AtrakcjeGalleryElementComponent } from './atrakcje-page/atrakcje-gallery/atrakcje-gallery-element/atrakcje-gallery-element.component';
@@ -45,7 +44,6 @@ import { CennikPageComponent } from './cennik-page/cennik-page.component';
     CallToActionMailComponent,
     ApartamentGalleryComponent,
     OkolicaPageComponent,
-    DlaGosciPageComponent,
     AtrakcjePageComponent,
     AtrakcjeGalleryComponent,
     AtrakcjeGalleryElementComponent,
