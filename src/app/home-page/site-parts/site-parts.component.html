@@ -4,7 +4,10 @@
             <img class="site-parts__element--image" src="./../../../assets/images/apartament/salon-web-min.jpg" alt="">
             <div class="site-parts__element--box">
                 <h1 class="site-parts__element--box-text">Apartament</h1>
-                <app-button buttonText="Przejdź" [isDark]="true"></app-button>
+                <a routerLink="/apartament">
+                    <app-button buttonText="Przejdź" [isDark]="true"></app-button>
+                </a>
+
                 <!-- //<a class="site-parts__element--box-button">Przjedź</a> -->
             </div>
         </div>
@@ -12,16 +15,21 @@
             <div class="site-parts__element--box">
                 <h1 class="site-parts__element--box-text">Okolice</h1>
                 <!-- <a class="site-parts__element--box-button">Przjedź</a> -->
-                <app-button buttonText="Przejdź" [isDark]="true"></app-button>
+                <a routerLink="/okolica">
+                    <app-button buttonText="Przejdź" [isDark]="true"></app-button>
+                </a>
             </div>
-            <img class="site-parts__element--image" src="./../../../assets/images/main-page/HomePageImage-min.jpg" alt="">
+            <img class="site-parts__element--image" src="./../../../assets/images/main-page/HomePageImage-min.jpg"
+                alt="">
         </div>
         <div class="site-parts__element">
             <img class="site-parts__element--image" src="./../../../assets/images/dlagosci/grill/grill2-min.JPG" alt="">
             <div class="site-parts__element--box">
                 <h1 class="site-parts__element--box-text">Atrakcje</h1>
                 <!-- <a class="site-parts__element--box-button">Przjedź</a> -->
-                <app-button buttonText="Przejdź" [isDark]="true"></app-button>
+                <a routerLink="/atrakcje">
+                    <app-button buttonText="Przejdź" [isDark]="true"></app-button>
+                </a>
             </div>
         </div>
     </div>
