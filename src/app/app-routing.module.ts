@@ -6,6 +6,7 @@ import { OkolicaPageComponent } from './okolica-page/okolica-page.component';
 import { AtrakcjePageComponent } from './atrakcje-page/atrakcje-page.component';
 import { CennikPageComponent } from './cennik-page/cennik-page.component';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import { CiasteczkaComponent } from './ciasteczka/ciasteczka.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'okolica', component: OkolicaPageComponent },
   { path: 'atrakcje', component: AtrakcjePageComponent },
   { path: 'cennik', component: CennikPageComponent },
-  { path: 'galeria', component: GalleryPageComponent }
+  { path: 'galeria', component: GalleryPageComponent },
+  { path: 'cookies', component: CiasteczkaComponent }
 ];
 
 @NgModule({

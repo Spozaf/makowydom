@@ -27,6 +27,37 @@ import { OkolicaMiejsceComponent } from './okolica-page/okolica-miejsce/okolica-
 import { CennikPageComponent } from './cennik-page/cennik-page.component';
 import { NgxGalleryModule } from 'ngx-gallery';
 import { GalleryPageComponent } from './gallery-page/gallery-page.component';
+import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
+import { CiasteczkaComponent } from './ciasteczka/ciasteczka.component';
+
+const cookieConfig:NgcCookieConsentConfig = {
+  "cookie": {
+    "domain": "localhost"
+  },
+  "position": "bottom",
+  "theme": "edgeless",
+  "palette": {
+    "popup": {
+      "background": "#fcfdf9",
+      "text": "#280f0f",
+      "link": "#280f0f"
+    },
+    "button": {
+      "background": "#280f0f",
+      "text": "#fcfdf9",
+      "border": "transparent"
+    }
+  },
+  "type": "info",
+  "content": {
+    "message": "Ta strona używa plików cookie.",
+    "dismiss": "Lubię ciastka!",
+    "deny": "Nie lubisz ciastkek?!",
+    "link": "Dowiedz się więcej",
+    "href": "/cookies",
+    "policy": "Cookie Policy"
+  }
+};
 
 @NgModule({
   declarations: [
@@ -51,9 +82,11 @@ import { GalleryPageComponent } from './gallery-page/gallery-page.component';
     AtrakcjeGalleryElementComponent,
     OkolicaMiejsceComponent,
     CennikPageComponent,
-    GalleryPageComponent
+    GalleryPageComponent,
+    CiasteczkaComponent
   ],
   imports: [
+    NgcCookieConsentModule.forRoot(cookieConfig),
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
