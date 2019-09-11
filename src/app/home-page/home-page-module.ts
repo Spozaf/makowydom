@@ -13,22 +13,22 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [
-        SitePartsComponent,
-        MainInfoComponent,
-        HeaderComponent,
-        HomePageComponent
+        // SitePartsComponent,
+        // MainInfoComponent,
+        // HeaderComponent,
+        // HomePageComponent
     ],
     imports: [
-        CommonModule,
-        SharedComponentsModule,
-        RouterModule.forChild(routes)
+        // CommonModule,
+        // SharedComponentsModule,
+        // RouterModule.forChild(routes)
     ],
     exports: [
-        SitePartsComponent,
-        MainInfoComponent,
-        HeaderComponent,
-        HomePageComponent,
-        RouterModule
+        // SitePartsComponent,
+        // MainInfoComponent,
+        // HeaderComponent,
+        // HomePageComponent,
+        // RouterModule
     ]
 })
 

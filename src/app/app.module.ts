@@ -18,7 +18,11 @@ import { SharedComponentsModule } from './shared-components/shared-components.mo
 // import { ApartamentPageModule } from './apartament-page/apartament-page.module';
 // import { CiasteczkaModule } from './ciasteczka/ciasteczka.module';
 // import { CennikPageModule } from './cennik-page/cennik-page.module';
-import { HomePageModule } from './home-page/home-page-module';
+//import { HomePageModule } from './home-page/home-page-module';
+import { HomePageComponent } from './home-page/home-page.component';
+import { SitePartsComponent } from './home-page/site-parts/site-parts.component';
+import { HeaderComponent } from './home-page/header/header.component';
+import { MainInfoComponent } from './home-page/main-info/main-info.component';
 // import { GalleryPageModule } from './gallery-page/gallery-page.module';
 
 const cookieConfig:NgcCookieConsentConfig = {
@@ -54,7 +58,11 @@ const cookieConfig:NgcCookieConsentConfig = {
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    HomePageComponent,
+    SitePartsComponent,
+    MainInfoComponent,
+    HeaderComponent
   ],
   imports: [
     NgcCookieConsentModule.forRoot(cookieConfig),
@@ -66,7 +74,7 @@ const cookieConfig:NgcCookieConsentConfig = {
     //ApartamentPageModule,
     //CiasteczkaModule,
     //CennikPageModule,
-    HomePageModule,
+    //HomePageModule,
     //GalleryPageModule
   ],
   providers: [ WINDOW_PROVIDERS ],

@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
+import { HomePageComponent } from './home-page/home-page.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', loadChildren: './home-page/home-page-module#HomePageModule' },
+  { path: '', pathMatch: 'full', component: HomePageComponent },
   { path: 'apartament', loadChildren: './apartament-page/apartament-page.module#ApartamentPageModule' },
   { path: 'atrakcje', loadChildren: './atrakcje-page/atrakcje-page.module#AtrakcjePageModule'},
   { path: 'okolica', loadChildren: './okolica-page/okolica-page.module#OkolicaPageModule' },

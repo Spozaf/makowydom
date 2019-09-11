@@ -49,184 +49,184 @@ export class GalleryPageComponent implements OnInit {
 
     this.galleryImages = [
       {
-        small: './../../assets/images/galeria/3.jpg',
-        medium: './../../assets/images/galeria/3.jpg',
-        big: './../../assets/images/galeria/3.jpg'
+        small: 'assets/images/galeria/3.jpg',
+        medium: 'assets/images/galeria/3.jpg',
+        big: 'assets/images/galeria/3.jpg'
       },
       {
-        small: './../../assets/images/galeria/4.jpg',
-        medium: './../../assets/images/galeria/4.jpg',
-        big: './../../assets/images/galeria/4.jpg'
+        small: 'assets/images/galeria/4.jpg',
+        medium: 'assets/images/galeria/4.jpg',
+        big: 'assets/images/galeria/4.jpg'
       },
       {
-        small: './../../assets/images/galeria/5.jpg',
-        medium: './../../assets/images/galeria/5.jpg',
-        big: './../../assets/images/galeria/5.jpg'
+        small: 'assets/images/galeria/5.jpg',
+        medium: 'assets/images/galeria/5.jpg',
+        big: 'assets/images/galeria/5.jpg'
       },
       {
-        small: './../../assets/images/galeria/6.jpg',
-        medium: './../../assets/images/galeria/6.jpg',
-        big: './../../assets/images/galeria/6.jpg'
+        small: 'assets/images/galeria/6.jpg',
+        medium: 'assets/images/galeria/6.jpg',
+        big: 'assets/images/galeria/6.jpg'
       },
       {
-        small: './../../assets/images/galeria/7.jpg',
-        medium: './../../assets/images/galeria/7.jpg',
-        big: './../../assets/images/galeria/7.jpg'
+        small: 'assets/images/galeria/7.jpg',
+        medium: 'assets/images/galeria/7.jpg',
+        big: 'assets/images/galeria/7.jpg'
       },
       {
-        small: './../../assets/images/galeria/8.jpg',
-        medium: './../../assets/images/galeria/8.jpg',
-        big: './../../assets/images/galeria/8.jpg'
+        small: 'assets/images/galeria/8.jpg',
+        medium: 'assets/images/galeria/8.jpg',
+        big: 'assets/images/galeria/8.jpg'
       },
       {
-        small: './../../assets/images/galeria/9.jpg',
-        medium: './../../assets/images/galeria/9.jpg',
-        big: './../../assets/images/galeria/9.jpg'
+        small: 'assets/images/galeria/9.jpg',
+        medium: 'assets/images/galeria/9.jpg',
+        big: 'assets/images/galeria/9.jpg'
       },
       {
-        small: './../../assets/images/galeria/10.jpg',
-        medium: './../../assets/images/galeria/10.jpg',
-        big: './../../assets/images/galeria/10.jpg'
+        small: 'assets/images/galeria/10.jpg',
+        medium: 'assets/images/galeria/10.jpg',
+        big: 'assets/images/galeria/10.jpg'
       },
       {
-        small: './../../assets/images/galeria/11.jpg',
-        medium: './../../assets/images/galeria/11.jpg',
-        big: './../../assets/images/galeria/11.jpg'
+        small: 'assets/images/galeria/11.jpg',
+        medium: 'assets/images/galeria/11.jpg',
+        big: 'assets/images/galeria/11.jpg'
       },
       {
-        small: './../../assets/images/galeria/12.jpg',
-        medium: './../../assets/images/galeria/12.jpg',
-        big: './../../assets/images/galeria/12.jpg'
+        small: 'assets/images/galeria/12.jpg',
+        medium: 'assets/images/galeria/12.jpg',
+        big: 'assets/images/galeria/12.jpg'
       },
       {
-        small: './../../assets/images/galeria/13.jpg',
-        medium: './../../assets/images/galeria/13.jpg',
-        big: './../../assets/images/galeria/13.jpg'
+        small: 'assets/images/galeria/13.jpg',
+        medium: 'assets/images/galeria/13.jpg',
+        big: 'assets/images/galeria/13.jpg'
       },
       {
-        small: './../../assets/images/galeria/14.jpg',
-        medium: './../../assets/images/galeria/14.jpg',
-        big: './../../assets/images/galeria/14.jpg'
+        small: 'assets/images/galeria/14.jpg',
+        medium: 'assets/images/galeria/14.jpg',
+        big: 'assets/images/galeria/14.jpg'
       },
       {
-        small: './../../assets/images/galeria/15.jpg',
-        medium: './../../assets/images/galeria/15.jpg',
-        big: './../../assets/images/galeria/15.jpg'
+        small: 'assets/images/galeria/15.jpg',
+        medium: 'assets/images/galeria/15.jpg',
+        big: 'assets/images/galeria/15.jpg'
       },
       {
-        small: './../../assets/images/galeria/16.jpg',
-        medium: './../../assets/images/galeria/16.jpg',
-        big: './../../assets/images/galeria/16.jpg'
+        small: 'assets/images/galeria/16.jpg',
+        medium: 'assets/images/galeria/16.jpg',
+        big: 'assets/images/galeria/16.jpg'
       },
       {
-        small: './../../assets/images/galeria/17.jpg',
-        medium: './../../assets/images/galeria/17.jpg',
-        big: './../../assets/images/galeria/17.jpg'
+        small: 'assets/images/galeria/17.jpg',
+        medium: 'assets/images/galeria/17.jpg',
+        big: 'assets/images/galeria/17.jpg'
       },
       {
-        small: './../../assets/images/galeria/18.jpg',
-        medium: './../../assets/images/galeria/18.jpg',
-        big: './../../assets/images/galeria/18.jpg'
+        small: 'assets/images/galeria/18.jpg',
+        medium: 'assets/images/galeria/18.jpg',
+        big: 'assets/images/galeria/18.jpg'
       },
       {
-        small: './../../assets/images/galeria/19.jpg',
-        medium: './../../assets/images/galeria/19.jpg',
-        big: './../../assets/images/galeria/19.jpg'
+        small: 'assets/images/galeria/19.jpg',
+        medium: 'assets/images/galeria/19.jpg',
+        big: 'assets/images/galeria/19.jpg'
       },
       {
-        small: './../../assets/images/galeria/20.jpg',
-        medium: './../../assets/images/galeria/20.jpg',
-        big: './../../assets/images/galeria/20.jpg'
+        small: 'assets/images/galeria/20.jpg',
+        medium: 'assets/images/galeria/20.jpg',
+        big: 'assets/images/galeria/20.jpg'
       },
       {
-        small: './../../assets/images/galeria/1.jpg',
-        medium: './../../assets/images/galeria/1.jpg',
-        big: './../../assets/images/galeria/1.jpg'
+        small: 'assets/images/galeria/1.jpg',
+        medium: 'assets/images/galeria/1.jpg',
+        big: 'assets/images/galeria/1.jpg'
       },
       {
-        small: './../../assets/images/galeria/21.jpg',
-        medium: './../../assets/images/galeria/21.jpg',
-        big: './../../assets/images/galeria/21.jpg'
+        small: 'assets/images/galeria/21.jpg',
+        medium: 'assets/images/galeria/21.jpg',
+        big: 'assets/images/galeria/21.jpg'
       },
       {
-        small: './../../assets/images/galeria/22.jpg',
-        medium: './../../assets/images/galeria/22.jpg',
-        big: './../../assets/images/galeria/22.jpg'
+        small: 'assets/images/galeria/22.jpg',
+        medium: 'assets/images/galeria/22.jpg',
+        big: 'assets/images/galeria/22.jpg'
       },
       {
-        small: './../../assets/images/galeria/23.jpg',
-        medium: './../../assets/images/galeria/23.jpg',
-        big: './../../assets/images/galeria/23.jpg'
+        small: 'assets/images/galeria/23.jpg',
+        medium: 'assets/images/galeria/23.jpg',
+        big: 'assets/images/galeria/23.jpg'
       },
       {
-        small: './../../assets/images/galeria/24.jpg',
-        medium: './../../assets/images/galeria/24.jpg',
-        big: './../../assets/images/galeria/24.jpg'
+        small: 'assets/images/galeria/24.jpg',
+        medium: 'assets/images/galeria/24.jpg',
+        big: 'assets/images/galeria/24.jpg'
       },
       {
-        small: './../../assets/images/galeria/25.jpg',
-        medium: './../../assets/images/galeria/25.jpg',
-        big: './../../assets/images/galeria/25.jpg'
+        small: 'assets/images/galeria/25.jpg',
+        medium: 'assets/images/galeria/25.jpg',
+        big: 'assets/images/galeria/25.jpg'
       },
       {
-        small: './../../assets/images/galeria/26.jpg',
-        medium: './../../assets/images/galeria/26.jpg',
-        big: './../../assets/images/galeria/26.jpg'
+        small: 'assets/images/galeria/26.jpg',
+        medium: 'assets/images/galeria/26.jpg',
+        big: 'assets/images/galeria/26.jpg'
       },
       {
-        small: './../../assets/images/galeria/27.jpg',
-        medium: './../../assets/images/galeria/27.jpg',
-        big: './../../assets/images/galeria/27.jpg'
+        small: 'assets/images/galeria/27.jpg',
+        medium: 'assets/images/galeria/27.jpg',
+        big: 'assets/images/galeria/27.jpg'
       },
       {
-        small: './../../assets/images/galeria/28.jpg',
-        medium: './../../assets/images/galeria/28.jpg',
-        big: './../../assets/images/galeria/28.jpg'
+        small: 'assets/images/galeria/28.jpg',
+        medium: 'assets/images/galeria/28.jpg',
+        big: 'assets/images/galeria/28.jpg'
       },
       {
-        small: './../../assets/images/galeria/29.jpg',
-        medium: './../../assets/images/galeria/29.jpg',
-        big: './../../assets/images/galeria/29.jpg'
+        small: 'assets/images/galeria/29.jpg',
+        medium: 'assets/images/galeria/29.jpg',
+        big: 'assets/images/galeria/29.jpg'
       },
       {
-        small: './../../assets/images/galeria/30.jpg',
-        medium: './../../assets/images/galeria/30.jpg',
-        big: './../../assets/images/galeria/30.jpg'
+        small: 'assets/images/galeria/30.jpg',
+        medium: 'assets/images/galeria/30.jpg',
+        big: 'assets/images/galeria/30.jpg'
       },
       {
-        small: './../../assets/images/galeria/31.jpg',
-        medium: './../../assets/images/galeria/31.jpg',
-        big: './../../assets/images/galeria/31.JPG'
+        small: 'assets/images/galeria/31.jpg',
+        medium: 'assets/images/galeria/31.jpg',
+        big: 'assets/images/galeria/31.JPG'
       },
       {
-        small: './../../assets/images/galeria/32.JPG',
-        medium: './../../assets/images/galeria/32.JPG',
-        big: './../../assets/images/galeria/32.JPG'
+        small: 'assets/images/galeria/32.JPG',
+        medium: 'assets/images/galeria/32.JPG',
+        big: 'assets/images/galeria/32.JPG'
       },
       {
-        small: './../../assets/images/galeria/33.jpg',
-        medium: './../../assets/images/galeria/33.jpg',
-        big: './../../assets/images/galeria/33.jpg'
+        small: 'assets/images/galeria/33.jpg',
+        medium: 'assets/images/galeria/33.jpg',
+        big: 'assets/images/galeria/33.jpg'
       },
       {
-        small: './../../assets/images/galeria/34.jpg',
-        medium: './../../assets/images/galeria/34.jpg',
-        big: './../../assets/images/galeria/34.jpg'
+        small: 'assets/images/galeria/34.jpg',
+        medium: 'assets/images/galeria/34.jpg',
+        big: 'assets/images/galeria/34.jpg'
       },
       {
-        small: './../../assets/images/galeria/35.jpg',
-        medium: './../../assets/images/galeria/35.jpg',
-        big: './../../assets/images/galeria/35.jpg'
+        small: 'assets/images/galeria/35.jpg',
+        medium: 'assets/images/galeria/35.jpg',
+        big: 'assets/images/galeria/35.jpg'
       },
       {
-        small: './../../assets/images/galeria/2.jpg',
-        medium: './../../assets/images/galeria/2.jpg',
-        big: './../../assets/images/galeria/2.jpg'
+        small: 'assets/images/galeria/2.jpg',
+        medium: 'assets/images/galeria/2.jpg',
+        big: 'assets/images/galeria/2.jpg'
       },
       {
-        small: './../../assets/images/galeria/3.jpg',
-        medium: './../../assets/images/galeria/3.jpg',
-        big: './../../assets/images/galeria/3.jpg'
+        small: 'assets/images/galeria/3.jpg',
+        medium: 'assets/images/galeria/3.jpg',
+        big: 'assets/images/galeria/3.jpg'
       }
     ];
   }
