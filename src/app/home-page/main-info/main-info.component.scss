@@ -8,20 +8,9 @@
     grid-template-columns: 40% 55%;
     grid-column-gap: 5%;
     //margin: 0px 5rem;
-    background-image: url('./../../../assets/images/dom2.JPG');
+    background-image: url('./../../../assets/images/main-page/dom2-min.JPG');
     background-size: cover;
     background-position: center;
-
-
-    &__photo {
-        height: 100%;
-        width: 100%;
-        //background-color: red;
-        background-image: url('./../../../assets/images/main-page/dom2-min.JPG');
-        background-size: cover;
-        margin-right: 5rem;
-        box-shadow: 0 1rem 3rem rgba(black, .3);
-    }
 
     &__content {
         height: 100%;

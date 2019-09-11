@@ -27,11 +27,16 @@
     transform: translateY(50%);
     animation: 3s ease-out .5s 1 forwards slideInFromDown;
     opacity: 0;
+    -webkit-animation-delay: 3s; 
+    animation-delay: 3s;
 
     &--img {
       width: 20rem;
+      height: 20rem;
       display: inline-block;
-      transform: translateY(5rem);
+      transform: translateY(-14rem);
+      background-image: url(./../../../assets/images/main-page/LogoMakowyDom.png);
+      background-size: cover;
     }
 
     &--heading {

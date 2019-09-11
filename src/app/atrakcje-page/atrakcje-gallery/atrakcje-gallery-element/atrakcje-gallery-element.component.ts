@@ -10,7 +10,7 @@ export class AtrakcjeGalleryElementComponent implements OnInit {
   @Input() photoOnePosition: string = 'center bottom';
   @Input() photoTwo: string = './../../../../assets/images/dlagosci/grill/ogien1-min.jpg';
   @Input() photoTwoPosition: string = 'center center';
-  @Input() photoThree: string = './../../../../assets/images/dlagosci/grill/grill2-min.JPG';
+  @Input() photoThree: string = './../../../../assets/images/dlagosci/grill/grill2-min.jpg';
   @Input() photoThreePosition: string = 'center center';
   @Input() photoFour: string = './../../../../assets/images/dlagosci/grill/salatka1-min.JPG';
   @Input() photoFourPosition: string = 'center center';

@@ -4,32 +4,22 @@ import { WINDOW_PROVIDERS } from './window.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { HeaderComponent } from './home-page/header/header.component';
+
 import { NavbarComponent } from './navbar/navbar.component';
-import { SocialProofComponent } from './shared-components/social-proof/social-proof.component';
-import { SocialCardComponent } from './shared-components/social-proof/social-card/social-card.component';
-import { MainInfoComponent } from './home-page/main-info/main-info.component';
-import { ButtonComponent } from './shared-components/button/button.component';
-import { CallToActionPhoneComponent } from './shared-components/call-to-action-phone/call-to-action-phone.component';
-import { SitePartsComponent } from './home-page/site-parts/site-parts.component';
 import { FooterComponent } from './footer/footer.component';
-import { ApartamentPageComponent } from './apartament-page/apartament-page.component';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { RoomCardComponent } from './apartament-page/room-card/room-card.component';
-import { CallToActionMailComponent } from './shared-components/call-to-action-mail/call-to-action-mail.component';
-import { ApartamentGalleryComponent } from './apartament-page/apartament-gallery/apartament-gallery.component';
 
-import { AtrakcjePageComponent } from './atrakcje-page/atrakcje-page.component';
-import { AtrakcjeGalleryComponent } from './atrakcje-page/atrakcje-gallery/atrakcje-gallery.component';
-import { AtrakcjeGalleryElementComponent } from './atrakcje-page/atrakcje-gallery/atrakcje-gallery-element/atrakcje-gallery-element.component';
 
-import { CennikPageComponent } from './cennik-page/cennik-page.component';
-import { NgxGalleryModule } from 'ngx-gallery';
-import { GalleryPageComponent } from './gallery-page/gallery-page.component';
 import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
-import { CiasteczkaComponent } from './ciasteczka/ciasteczka.component';
-import { OkolicaPageModule } from './okolica-page/okolica-page.module';
+
+import { SharedComponentsModule } from './shared-components/shared-components.module';
+
+// import { OkolicaPageModule } from './okolica-page/okolica-page.module';
+// import { AtrakcjePageModule } from './atrakcje-page/atrakcje-page.module';
+// import { ApartamentPageModule } from './apartament-page/apartament-page.module';
+// import { CiasteczkaModule } from './ciasteczka/ciasteczka.module';
+// import { CennikPageModule } from './cennik-page/cennik-page.module';
+import { HomePageModule } from './home-page/home-page-module';
+// import { GalleryPageModule } from './gallery-page/gallery-page.module';
 
 const cookieConfig:NgcCookieConsentConfig = {
   "cookie": {
@@ -63,36 +53,21 @@ const cookieConfig:NgcCookieConsentConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent,
-    HeaderComponent,
     NavbarComponent,
-    SocialProofComponent,
-    SocialCardComponent,
-    MainInfoComponent,
-    ButtonComponent,
-    CallToActionPhoneComponent,
-    SitePartsComponent,
-    FooterComponent,
-    ApartamentPageComponent,
-    RoomCardComponent,
-    CallToActionMailComponent,
-    ApartamentGalleryComponent,
-    
-    AtrakcjePageComponent,
-    AtrakcjeGalleryComponent,
-    AtrakcjeGalleryElementComponent,
-    
-    CennikPageComponent,
-    GalleryPageComponent,
-    CiasteczkaComponent
+    FooterComponent
   ],
   imports: [
     NgcCookieConsentModule.forRoot(cookieConfig),
     BrowserModule,
     AppRoutingModule,
-    SlickCarouselModule,
-    NgxGalleryModule,
-    OkolicaPageModule
+    //OkolicaPageModule,
+    SharedComponentsModule,
+    //AtrakcjePageModule,
+    //ApartamentPageModule,
+    //CiasteczkaModule,
+    //CennikPageModule,
+    HomePageModule,
+    //GalleryPageModule
   ],
   providers: [ WINDOW_PROVIDERS ],
   bootstrap: [AppComponent]
