@@ -9,23 +9,29 @@
   box-shadow: 0 0.5rem 6rem rgba($color-primary-dark-1, 0.2);
   margin: 5rem;
   background-position: center;
+  @include respond(phone) { // width < 1200?
+    margin: 0px;
+  }
 }
 
 %apartament-room-info {
   background-color: rgba($color-secondary, 0.9);
   min-height: 69%;
   width: 30%;
-  @include respond(tab-port) { 
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-}
   top: 50%;
   position: absolute;
   transform: translateY(-60%);
   margin: 5rem;
   padding: 6rem;
   border-bottom: $my-border-bottom;
+  @include respond(tab-port) { 
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  @include respond(phone) { // width < 1200?
+    background-color: rgba($color-secondary, 0.7);
+  }
 }
 
 .apartament {
@@ -60,6 +66,9 @@
       @extend %apartament-room;
       border-bottom: $my-border-bottom;
       border-left: $my-border-bottom;
+      @include respond(phone) { // width < 1200?
+        margin-bottom: 5rem;
+      }
     }
     &--kuchnia-info {
       @extend %apartament-room-info;
@@ -78,6 +87,7 @@
     }
     &--lazienka-info {
       @extend %apartament-room-info;
+      
     }
 
     &--name {
