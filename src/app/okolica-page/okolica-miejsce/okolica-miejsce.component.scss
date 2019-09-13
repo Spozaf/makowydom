@@ -3,6 +3,11 @@
 
 %miejsce-basic {
   height: 90vh;
+  @include respond(tab-land) { // width < 1200?
+    &:first-child{
+      height: 95vh;
+    }
+  } 
   position: relative;
   display: flex;
   padding: 5rem;
@@ -10,13 +15,18 @@
   .miejsce--zdjecie {
     width: 60%;
     height: 100%;
-    //background-image: url("./../../../assets/images/Okolica/krakow.jpg");
+    @include respond(tab-port) { // width < 1200?
+      width: 40%;
+    }
     background-size: cover;
     box-shadow: $my-box-shadow;
   }
 
   .miejsce--opis {
     width: 40%;
+    @include respond(tab-port) { // width < 1200?
+       width: 60%;
+    }
     height: 100%;
     position: relative;
     border-bottom: $my-border-bottom;
@@ -51,6 +61,12 @@
 
 .miejsce {
   @extend %miejsce-basic;
+  @include respond(tab-land) { // width < 1200?
+    &:first-child{
+      padding-top: 8rem;
+    }
+  }
+
 }
 
 .miejsce-right {

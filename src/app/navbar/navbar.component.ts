@@ -2,6 +2,7 @@ import { Component, OnInit, HostListener, Inject, Input } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { WINDOW } from './../window.service';
 import { Router } from '@angular/router';
+import { ResponsiveSizeService } from '../services/responsive-size.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,13 +12,18 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
   isHomePage: boolean = false;
   navbarTransparent = false;
+  screen: number;
+  sideNavbar: boolean;
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
     @Inject(WINDOW) private window,
-    private router: Router
-  ) {
+    private router: Router,
+    private respService: ResponsiveSizeService
+  ) { //sprawdzanie czy użtykownik jest na homepage
+      //sprawdzanie czy był router event
       this.router.events.subscribe((event) => {
+        //sprawdzamy czy jest to url event i czy url jest takie samo jak homepage
         if(event['url'] && event['url'] == '/') {
           this.isHomePage = true;
           this.navbarTransparent = true;
@@ -29,10 +35,19 @@ export class NavbarComponent implements OnInit {
    }
 
   ngOnInit() {
-    
+    this.screen = this.respService.getScreenSize();
+    if(this.screen > 2){
+      this.sideNavbar = true;
+    }
+    else {
+      this.sideNavbar = false;
+    }
+    console.log(this.sideNavbar);
   }
 
+  // Wykrywanie ile został scrollowany ekran
   @HostListener("window:scroll", [])
+  //sprawdzanie czy użytkownik zaczął scrollować
   onWindowScroll() {
 
     const number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
@@ -44,8 +59,8 @@ export class NavbarComponent implements OnInit {
 
   }
 
+  // jeśli kliknięty został któryś link
   onPageClick(hompage: boolean) {
-    console.log('HomePageFun ' + this.isHomePage);
     if(hompage){
       this.isHomePage = true;
       this.navbarTransparent = true;

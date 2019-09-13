@@ -1,5 +1,5 @@
 <div class="navbar" [ngClass]="{'navbar__scroll' : !navbarTransparent, 'navbar__scroll-not' : navbarTransparent}">
-    <ul class="navbar__list">
+    <ul *ngIf="!sideNavbar" class="navbar__list">
         <li class="navbar__item">
             <a [routerLink]="[ '/' ]" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
@@ -30,6 +30,26 @@
             <a routerLink="/cennik" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
                 'navbar__link--scroll-not' : navbarTransparent}">Cennik</a>
+        </li>
+    </ul>
+    <ul *ngIf="sideNavbar" class="navbar__list">
+        <li class="navbar__item">
+            <a [routerLink]="[ '/' ]" [ngClass]="{
+                'navbar__link--scroll' : !navbarTransparent, 
+                'navbar__link--scroll-not' : navbarTransparent}">Menu</a>
+        </li>
+    </ul>
+</div>
+<div class="sidenav">
+    <ul class="sidenav__list">
+        <li class="sidenav__list--item">
+            <a href="">Makowy Dom</a>
+        </li>
+        <li class="sidenav__list--item">
+            <a href="">Apartament</a>
+        </li>
+        <li class="sidenav__list--item">
+            <a href="">Atrakcje</a>
         </li>
     </ul>
 </div>

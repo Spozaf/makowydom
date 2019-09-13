@@ -5,6 +5,9 @@
     height: 200vh;
     background-color: $color-secondary;
     padding: 4rem 12rem;
+    @include respond(tab-port) { 
+        padding: 4rem 1rem;
+    }
 
     &__wrapper {
         height: 100%;

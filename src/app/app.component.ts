@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { NgcCookieConsentService } from 'ngx-cookieconsent';
-import { ImagesService } from './images.service';
+import { ImagesService } from './services/images.service';
 
 @Component({
   selector: 'app-root',

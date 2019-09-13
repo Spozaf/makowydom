@@ -13,8 +13,13 @@
 
 %apartament-room-info {
   background-color: rgba($color-secondary, 0.9);
-  height: 69%;
+  min-height: 69%;
   width: 30%;
+  @include respond(tab-port) { 
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
   top: 50%;
   position: absolute;
   transform: translateY(-60%);

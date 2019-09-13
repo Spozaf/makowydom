@@ -37,11 +37,20 @@
       transform: translateY(-14rem);
       background-image: url(./../../../assets/images/main-page/LogoMakowyDom.png);
       background-size: cover;
+      @include respond(tab-port) { 
+        width: 15rem;
+        height: 15rem;
+        transform: translateY(-10rem);
+    }
+      
     }
 
     &--heading {
       color: $color-white;
       font-size: 12rem;
+      @include respond(tab-port) { 
+        font-size: 10rem;
+    }
       display: inline-block;
     }
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ResponsiveSizeService } from 'src/app/services/responsive-size.service';
 
 @Component({
   selector: 'app-social-proof',
@@ -7,9 +8,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SocialProofComponent implements OnInit {
 
-  constructor() { }
+  constructor(private respService: ResponsiveSizeService) { }
+  screen: number;
+  slideConfig: any;
 
   ngOnInit() {
+    this.screen = this.respService.getScreenSize();
+    if(this.screen === 3){
+      this.slideConfig = {
+        //"centerPadding": '15.5rem',
+        "centerMode": true,
+        "slidesToShow": 2, 
+        "slidesToScroll": 1,
+        "infinite": true,
+        "autoplay": true,
+        "autoplaySpeed": 3000,
+        //"dots": true,
+        //"arrows": false,
+        "speed": 3000
+        };
+    }
+    else {
+      this.slideConfig = {
+        //"centerPadding": '15.5rem',
+        "centerMode": true,
+        "slidesToShow": 3, 
+        "slidesToScroll": 1,
+        "infinite": true,
+        "autoplay": true,
+        "autoplaySpeed": 3000,
+        //"dots": true,
+        //"arrows": false,
+        "speed": 3000
+        };
+    }
   }
 
   slides = [
@@ -50,12 +82,6 @@ export class SocialProofComponent implements OnInit {
       opinia: "Wartość do ceny jest nie do pobicia! Miejsce jest perfekcyjnie czyste."
     },
     {
-      img: "assets/images/faces/g3-min.jpg",
-      name: "Maddalena",
-      portal: "Facebook",
-      opinia: "Polecam to miesjsce ponieaż jest czyste, bardzo dobrze wyposażone oraz w środku natury i spokoju. Gospodarze są bardzo mili i gościnni."
-    },
-    {
       img: "assets/images/faces/b4-min.jpg",
       name: "Andriy",
       portal: "Airbnb",
@@ -92,16 +118,6 @@ export class SocialProofComponent implements OnInit {
       opinia: "Kto lubi ciszę, spokój i chce wypocząć to miejsce jest idealne, z dala od miejskiego zgiełku. Super warunki, przemili i pomocni właściciele, polecam!"
     }
   ];
-  slideConfig = {
-  //"centerPadding": '15.5rem',
-  "centerMode": true,
-  "slidesToShow": 3, 
-  "slidesToScroll": 1,
-  "infinite": true,
-  "autoplay": true,
-  "autoplaySpeed": 3000,
-  //"dots": true,
-  //"arrows": false,
-  "speed": 3000
-  };
+  
+
 }

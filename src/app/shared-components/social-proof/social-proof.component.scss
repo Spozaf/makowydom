@@ -1,7 +1,11 @@
 @import "../../../sharedScss/variables";
+@import './../../../sharedScss/mixins';
 
 .social-proof {
     height: $section-break;
+    @include respond(tab-land) { // width < 1200?
+        height: 30rem;
+    }
     background-image: $gradient-white;
 
     .carousel {
@@ -18,6 +22,9 @@
             &.slick-prev {
                 left: 3rem;
                 transform: translateY(-10rem);
+                @include respond(tab-land) { // width < 1200?
+                    transform: translateY(-13rem); //1 rem = 9px, 9/16 = 50%
+                }
                 z-index: 10;
                 &::before{
                     color: $color-primary-dark-1;
@@ -27,6 +34,9 @@
             &.slick-next {
                 right: 3rem;
                 transform: translateY(-10rem);
+                @include respond(tab-land) { // width < 1200?
+                    transform: translateY(-13rem); //1 rem = 9px, 9/16 = 50%
+                }
                 &::before{
                     color: $color-primary-dark-1;
                 }

@@ -116,9 +116,7 @@ export class ImagesService {
     "./../assets/images/icons/big/washing-machine.png"
   ]
   preload() {
-    console.log('preload');
     for (var i = 0; i < this.preloadImg.length; i++) {
-      console.log('preload loop');
       this.images[i] = new Image()
       this.images[i].src = this.preloadImg[i]
     }
