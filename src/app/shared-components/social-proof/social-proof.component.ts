@@ -127,7 +127,7 @@ export class SocialProofComponent implements OnInit {
     },
     {
       img: "assets/images/faces/g5-min.jpg",
-      name: "Katarzyna",
+      name: "Kasia",
       portal: "Facebook",
       opinia: "Kto lubi ciszę, spokój i chce wypocząć to miejsce jest idealne, z dala od miejskiego zgiełku. Super warunki, przemili i pomocni właściciele, polecam!"
     }

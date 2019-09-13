@@ -24,6 +24,9 @@
   @include respond(phone) { 
     padding-top: 8rem;
   }
+  @include respond(phone-small) { 
+    padding-top: 1px;
+  }
 
   &__text-box {
     text-align: center;
@@ -32,6 +35,7 @@
     opacity: 0;
     -webkit-animation-delay: 3s; 
     animation-delay: 3s;
+    
 
     &--img {
       width: 20rem;
@@ -49,6 +53,10 @@
         width: 15rem;
         height: 15rem;
         transform: translateY(-9rem);
+      }
+      @include respond(phone-small) { 
+        display: inline-block;
+        transform: translateY(-1rem);
       }
       
     }

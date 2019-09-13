@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ResponsiveSizeService } from '../services/responsive-size.service';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  isMobile: boolean;
+  constructor(private respService: ResponsiveSizeService) { }
 
   ngOnInit() {
+    if(this.respService.getScreenSize()>3){
+      this.isMobile = true;
+    }
   }
 
 }

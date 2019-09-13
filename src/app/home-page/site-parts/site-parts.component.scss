@@ -8,6 +8,9 @@
     @include respond(tab-port) { 
         padding: 4rem 1rem;
     }
+    @include respond(phone) { 
+        height: 270vh;
+    }
 
     &__wrapper {
         height: 100%;
@@ -22,6 +25,10 @@
 
         display: grid;
         grid-template-columns: 1fr 1fr;
+        @include respond(phone) { 
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
 
         &:not(:last-child){
             border-bottom: $my-border-bottom;

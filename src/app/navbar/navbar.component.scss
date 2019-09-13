@@ -37,21 +37,24 @@
   &__item {
     display: inline-block;
     margin-right: 5rem;
+    @include respond(phone) {
+      margin-right: auto; 
+    }
 
-    button{
+    button {
       border: 0;
       text-decoration: 0;
       font-size: $heading-h1;
       font-weight: bold;
       background-color: transparent;
-      &.navbar__link--scroll{
+      &.navbar__link--scroll {
         color: $color-text;
       }
-      &.navbar__link--scroll-not{
+      &.navbar__link--scroll-not {
         color: $color-secondary;
       }
 
-      &:focus{
+      &:focus {
         outline: none;
         border-bottom: $my-border-bottom;
       }
@@ -89,7 +92,7 @@
   }
 }
 
-%shared-sidenav{
+%shared-sidenav {
   //border-right: $my-border-bottom;
   height: 100%;
   //width: 40%;
@@ -100,13 +103,17 @@
   left: 0;
   background-color: $color-secondary;
   overflow-x: hidden;
-  transition: .5s;
+  transition: 0.5s;
   padding-top: 5rem;
 
   text-align: center;
-  img{
+  img {
     height: 15rem;
     opacity: 0;
+    @include respond(phone-small) {
+      // width < 1200?
+      height: 10rem; //1 rem = 9px, 9/16 = 50%
+    }
   }
 
   ul {
@@ -116,8 +123,11 @@
 
     li {
       font-size: 3rem;
+      @include respond(phone-small) {
+        font-size: 2rem; 
+      }
       white-space: nowrap;
-      &:first-child{
+      &:first-child {
         margin-top: 0px;
       }
       margin: 2rem;
@@ -135,7 +145,7 @@
       }
     }
   }
-};
+}
 
 .sidenav {
   @extend %shared-sidenav;
@@ -143,12 +153,12 @@
 
 .sidenav-open {
   @extend %shared-sidenav;
-  width: 40%;
+  width: 50%;
   border-right: $my-border-bottom;
   ul {
     opacity: 1;
   }
-  img{
+  img {
     opacity: 1;
   }
 }

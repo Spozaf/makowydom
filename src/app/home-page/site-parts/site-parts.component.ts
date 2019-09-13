@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ResponsiveSizeService } from 'src/app/services/responsive-size.service';
 
 @Component({
   selector: 'app-site-parts',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SitePartsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private respService: ResponsiveSizeService) { }
 
+  isPhone: boolean = false;
   ngOnInit() {
+    if(this.respService.getScreenSize() == 4){
+      this.isPhone=true;
+    }
   }
 
 }

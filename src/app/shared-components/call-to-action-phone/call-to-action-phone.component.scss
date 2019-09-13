@@ -2,14 +2,15 @@
 @import "../../../sharedScss/mixins";
 
 .call-to-action {
-    //background-image: linear-gradient(to right bottom, $color-primary, $color-primary-dark-1);
-    //background-image: $gradient-red;
     height: $section-break;
     position: relative;
 
     &__info {
         @include center;
-        //color: $color-text;
+        @include respond(phone) { 
+            width: 90%;
+            text-align: center;
+        }
 
         
         &--icons {
@@ -18,13 +19,13 @@
             }
             text-align: center;
             transform: translateY(1.7rem);
+            @include respond(phone-small) { 
+                transform: translateY(.1rem);
+            }
         }
 
         &--icon {
             height: 4rem; 
-            @include respond(tab-port) { // width < 1200?
-                font-size: 3rem;
-            }
         }
 
         &--phone {
@@ -32,6 +33,7 @@
             @include respond(tab-port) { // width < 1200?
                 font-size: 5rem;
             }
+            
             //text-shadow: 0 1rem 2rem rgba(black, .8);
             @extend %text-gradient;
         }
@@ -46,6 +48,7 @@
             border-bottom: $my-border-bottom;
             padding-bottom: 1.2rem;
             @extend %text-gradient;
+            
         }
     }
 }
