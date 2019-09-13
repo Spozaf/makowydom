@@ -1,6 +1,11 @@
+@import './../../../sharedScss/_mixins.scss';
+
 .atrakcje-gallery {
     height: 200vh;
     padding: 5rem 10rem;
+    @include respond(phone) { // width < 1200?
+        padding: 5rem 1rem;
+    }
     margin-bottom: 10rem;
 
     &__element{

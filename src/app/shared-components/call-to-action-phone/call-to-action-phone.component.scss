@@ -22,10 +22,16 @@
 
         &--icon {
             height: 4rem; 
+            @include respond(tab-port) { // width < 1200?
+                font-size: 3rem;
+            }
         }
 
         &--phone {
             font-size: 7rem;
+            @include respond(tab-port) { // width < 1200?
+                font-size: 5rem;
+            }
             //text-shadow: 0 1rem 2rem rgba(black, .8);
             @extend %text-gradient;
         }
@@ -33,6 +39,9 @@
         &--text {
             text-align: center;
             font-size: $heading-h1;
+            @include respond(tab-port) { // width < 1200?
+                font-size: 3rem;
+            }
             //text-shadow: 0 0.5rem 1rem rgba(black, .4);
             border-bottom: $my-border-bottom;
             padding-bottom: 1.2rem;

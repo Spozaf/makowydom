@@ -11,6 +11,9 @@
   position: relative;
   display: flex;
   padding: 5rem;
+  @include respond(phone) { // width < 1200?
+    padding: 5rem 1rem;
+  }
   color: $color-text;
   .miejsce--zdjecie {
     width: 60%;
@@ -19,6 +22,7 @@
       width: 40%;
     }
     background-size: cover;
+    background-position: center;
     box-shadow: $my-box-shadow;
   }
 
@@ -44,6 +48,9 @@
     .miejsce--opis-p {
       font-size: $heading-h2;
       text-align: justify;
+      @include respond(phone) { // width < 1200?
+        font-size: 1.5rem;
+     }
     }
 
     .miejsce--opis-icona {

@@ -14,11 +14,25 @@ export class SocialProofComponent implements OnInit {
 
   ngOnInit() {
     this.screen = this.respService.getScreenSize();
-    if(this.screen === 3){
+    if(this.screen == 3){
       this.slideConfig = {
         //"centerPadding": '15.5rem',
         "centerMode": true,
         "slidesToShow": 2, 
+        "slidesToScroll": 1,
+        "infinite": true,
+        "autoplay": true,
+        "autoplaySpeed": 3000,
+        //"dots": true,
+        //"arrows": false,
+        "speed": 3000
+        };
+    }
+    else if(this.screen == 4) {
+      this.slideConfig = {
+        //"centerPadding": '15.5rem',
+        "centerMode": true,
+        "slidesToShow": 1, 
         "slidesToScroll": 1,
         "infinite": true,
         "autoplay": true,

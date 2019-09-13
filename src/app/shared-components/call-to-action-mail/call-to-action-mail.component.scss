@@ -15,10 +15,16 @@
         &--write{
             font-size: 3rem;
             transform: translateY(2rem);
+            @include respond(tab-port) { // width < 1200?
+                font-size: 2rem;
+            }
         }
 
         &--email{
             font-size: 6rem;
+            @include respond(tab-port) { // width < 1200?
+                font-size: 5rem;
+            }
         }
 
         &--wait{

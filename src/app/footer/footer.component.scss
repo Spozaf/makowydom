@@ -24,12 +24,18 @@
     &__heading {
         font-size: 3rem;
         margin-bottom: 3rem;
+        @include respond(tab-port) { // width < 1200?
+            font-size: 2rem;
+        }
         
     }
 
     &__list {
         list-style: none;
         font-size: 1.5rem;
+        @include respond(tab-port) { // width < 1200?
+            font-size: 1.2rem;
+        }
         font-weight: bold;
 
         &--item {
@@ -40,7 +46,14 @@
     &__logo{
         width: 100%;
         transform: translate(-10rem, 1rem);
-        
+        @include respond(tab-port) { // width < 1200?
+            width: 11rem;
+            transform: translate(-4rem, 1rem);
+        }
+        @include respond(phone) { // width < 1200?
+            width: 11rem;
+            transform: translate(0rem, 1rem);
+        }
     }
 
     &__img {

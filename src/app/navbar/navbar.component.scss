@@ -11,11 +11,11 @@
   //text-transform: uppercase;
   font-weight: bolder;
   display: inline-block;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .navbar {
-  border-bottom: 1px solid rgba($color-primary-dark-1, .5);
+  border-bottom: 1px solid rgba($color-primary-dark-1, 0.5);
 
   &__scroll-not {
     background-color: rgba($color-secondary, 0.2);
@@ -37,6 +37,25 @@
   &__item {
     display: inline-block;
     margin-right: 5rem;
+
+    button{
+      border: 0;
+      text-decoration: 0;
+      font-size: $heading-h1;
+      font-weight: bold;
+      background-color: transparent;
+      &.navbar__link--scroll{
+        color: $color-text;
+      }
+      &.navbar__link--scroll-not{
+        color: $color-secondary;
+      }
+
+      &:focus{
+        outline: none;
+        border-bottom: $my-border-bottom;
+      }
+    }
   }
 
   // Class when you scroll page
@@ -70,15 +89,66 @@
   }
 }
 
-.sidenav{
+%shared-sidenav{
+  //border-right: $my-border-bottom;
   height: 100%;
+  //width: 40%;
   width: 0;
   position: fixed;
   z-index: 10001;
   top: 0;
   left: 0;
-  background-color: #111;
-  //overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  background-color: $color-secondary;
+  overflow-x: hidden;
+  transition: .5s;
+  padding-top: 5rem;
+
+  text-align: center;
+  img{
+    height: 15rem;
+    opacity: 0;
+  }
+
+  ul {
+    list-style: none;
+    text-align: center;
+    opacity: 0;
+
+    li {
+      font-size: 3rem;
+      white-space: nowrap;
+      &:first-child{
+        margin-top: 0px;
+      }
+      margin: 2rem;
+      a {
+        &:link,
+        &:visited {
+          color: $color-text;
+          @extend %link-shared;
+        }
+        &:hover,
+        &:active {
+          color: rgba(#280f0f, 1);
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+};
+
+.sidenav {
+  @extend %shared-sidenav;
+}
+
+.sidenav-open {
+  @extend %shared-sidenav;
+  width: 40%;
+  border-right: $my-border-bottom;
+  ul {
+    opacity: 1;
+  }
+  img{
+    opacity: 1;
+  }
 }

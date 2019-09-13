@@ -14,6 +14,8 @@ export class NavbarComponent implements OnInit {
   navbarTransparent = false;
   screen: number;
   sideNavbar: boolean;
+  sideNavbarOpen: boolean = false;
+  sideNavbarClass: string = 'sidenav';
 
   constructor(
     @Inject(DOCUMENT) private document: Document,
@@ -42,7 +44,6 @@ export class NavbarComponent implements OnInit {
     else {
       this.sideNavbar = false;
     }
-    console.log(this.sideNavbar);
   }
 
   // Wykrywanie ile został scrollowany ekran
@@ -68,6 +69,31 @@ export class NavbarComponent implements OnInit {
     else{
       this.isHomePage = false;
       this.navbarTransparent = false;
+    }
+  }
+
+  onMenuClick(){
+    if(this.sideNavbarOpen){
+      this.sideNavbarClass = 'sidenav'
+      this.sideNavbarOpen = !this.sideNavbarOpen;
+    } else {
+      this.sideNavbarClass = 'sidenav-open'
+      this.sideNavbarOpen = !this.sideNavbarOpen;
+    }
+  }
+
+  //kliknięcie wewnątrz menu
+  clickedInside($event: Event){
+    $event.preventDefault();
+    $event.stopPropagation();  // <- that will stop propagation on lower layers
+  }
+
+  //kliknięcie na zewnątrz menu
+  @HostListener('document:click', ['$event']) clickedOutside($event){
+    // here you can hide your menu
+    if(this.sideNavbarOpen){
+      this.sideNavbarClass = 'sidenav'
+      this.sideNavbarOpen = !this.sideNavbarOpen;
     }
   }
 }

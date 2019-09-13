@@ -21,6 +21,9 @@
   background-size: cover;
   height: 100vh;
   position: relative;
+  @include respond(phone) { 
+    padding-top: 8rem;
+  }
 
   &__text-box {
     text-align: center;
@@ -41,7 +44,12 @@
         width: 15rem;
         height: 15rem;
         transform: translateY(-10rem);
-    }
+      }
+      @include respond(phone) { 
+        width: 15rem;
+        height: 15rem;
+        transform: translateY(-9rem);
+      }
       
     }
 
@@ -50,7 +58,10 @@
       font-size: 12rem;
       @include respond(tab-port) { 
         font-size: 10rem;
-    }
+      }
+      @include respond(phone) { 
+        font-size: 7rem;
+      }
       display: inline-block;
     }
   }

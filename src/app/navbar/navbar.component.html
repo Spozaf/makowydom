@@ -1,4 +1,4 @@
-<div class="navbar" [ngClass]="{'navbar__scroll' : !navbarTransparent, 'navbar__scroll-not' : navbarTransparent}">
+<div class="navbar" (click)="clickedInside($event)" [ngClass]="{'navbar__scroll' : !navbarTransparent, 'navbar__scroll-not' : navbarTransparent}">
     <ul *ngIf="!sideNavbar" class="navbar__list">
         <li class="navbar__item">
             <a [routerLink]="[ '/' ]" [ngClass]="{
@@ -34,22 +34,32 @@
     </ul>
     <ul *ngIf="sideNavbar" class="navbar__list">
         <li class="navbar__item">
-            <a [routerLink]="[ '/' ]" [ngClass]="{
+            <button (click)="onMenuClick()" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
-                'navbar__link--scroll-not' : navbarTransparent}">Menu</a>
+                'navbar__link--scroll-not' : navbarTransparent}">Menu</button>
         </li>
     </ul>
 </div>
-<div class="sidenav">
-    <ul class="sidenav__list">
-        <li class="sidenav__list--item">
-            <a href="">Makowy Dom</a>
+<div class="{{sideNavbarClass}}" (click)="clickedInside($event)">
+    <img src="assets/images/main-page/LogoMakowyDom.png" alt="">
+    <ul>
+        <li>
+            <a [routerLink]="[ '/' ]" (click)="onMenuClick()" >Makowy Dom</a>
         </li>
-        <li class="sidenav__list--item">
-            <a href="">Apartament</a>
+        <li>
+            <a routerLink="/apartament" (click)="onMenuClick()" >Apartament</a>
         </li>
-        <li class="sidenav__list--item">
-            <a href="">Atrakcje</a>
+        <li>
+            <a routerLink="/atrakcje" (click)="onMenuClick()">Atrakcje</a>
+        </li>
+        <li>
+            <a routerLink="/okolica" (click)="onMenuClick()">Okolice</a>
+        </li>
+        <li>
+            <a routerLink="/galeria" (click)="onMenuClick()">Galeria</a>
+        </li>
+        <li>
+            <a routerLink="/cennik" (click)="onMenuClick()">Cennik</a>
         </li>
     </ul>
 </div>
