@@ -9,11 +9,19 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    @include respond(phone) {
+        padding: 8rem 1rem;
+    }
     
     &__wrapper{
         width: 80vw;
         background-color: rgba($color-secondary, .7);
         padding: 5rem 0px;
+        margin-left: auto;
+        margin-right: auto;
+        @include respond(phone) {
+            width: 95vw;
+        }
     }
 
     &__50{
@@ -29,10 +37,16 @@
     &__h1{
         font-size: $heading-h1-big;
         @extend %text-gradient;
+        @include respond(phone) {
+            font-size: 2.4rem;
+        }
     }
 
     &__h2{
         font-size: $heading-h1;
+        @include respond(phone) {
+            font-size: 2.4rem;
+        }
     }
     &__h3{
         font-size: $heading-h2;
@@ -45,6 +59,9 @@
     &__logo-wrapper{
         img{
             width: 20rem;
+            @include respond(phone) {
+                width: 15rem;
+            }
         }
     }
 
@@ -52,14 +69,17 @@
         &--icon{
             img{
                 height: 8rem;
-                @include respond(phone) { // width < 1200?
-                    height: 6rem;
+                @include respond(phone) {
+                    height: 5rem;
                 }
             }
         }
         &--text{
             font-size: $heading-h1;
             font-weight: bold;
+            @include respond(phone) {
+                font-size: 2.4rem;
+            }
         }
     }
 

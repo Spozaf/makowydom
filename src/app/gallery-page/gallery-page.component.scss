@@ -2,9 +2,17 @@
 
 .gallery{
     padding: 10rem;
+    @include respond(phone) {
+        padding: 0rem;
+        margin-bottom: 5rem;
+    }
 
     ::ng-deep .ngx-gallery-icon{
-        color: $color-primary-dark-1;
+        color: $color-text;
+        font-size: 10rem;
+        @include respond(phone) {
+            font-size: 5rem;
+        }
     }
 
 }

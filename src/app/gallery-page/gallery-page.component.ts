@@ -26,14 +26,16 @@ export class GalleryPageComponent implements OnInit {
         {
           width: "100%",
           height: "135vh",
-          thumbnailsColumns: 3,
+          thumbnailsColumns: 2,
           thumbnailsRows: 1,
           thumbnailsPercent: 40,
           imagePercent: 60,
-          thumbnailMargin: 2,
-          thumbnailsMargin: 2,
-          thumbnailsOrder: 2,
-          imageAnimation: NgxGalleryAnimation.Slide
+          thumbnailMargin: 1,
+          thumbnailsMargin: 1,
+          thumbnailsOrder: 1,
+          imageAnimation: NgxGalleryAnimation.Slide,
+          arrowPrevIcon: "fas fa-angle-double-left",
+          arrowNextIcon: 'fas fa-angle-double-right'
         },
         // max-width 800
         {
@@ -63,7 +65,9 @@ export class GalleryPageComponent implements OnInit {
           thumbnailMargin: 2,
           thumbnailsMargin: 2,
           thumbnailsOrder: 2,
-          imageAnimation: NgxGalleryAnimation.Slide
+          imageAnimation: NgxGalleryAnimation.Slide,
+          arrowPrevIcon: "fas fa-angle-double-left",
+          arrowNextIcon: 'fas fa-angle-double-right'
         },
         // max-width 800
         {

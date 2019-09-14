@@ -2,7 +2,7 @@
 @import "./../../../sharedScss/mixins";
 
 %miejsce-basic {
-  min-height: 90vh;
+  height: 90vh;
   @include respond(tab-land) {
     
     &:first-child {
