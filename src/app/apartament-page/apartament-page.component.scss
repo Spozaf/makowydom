@@ -1,5 +1,5 @@
-@import "../../sharedScss/variables";
-@import "./../../sharedScss/mixins";
+@import '../../sharedScss/variables';
+@import './../../sharedScss/mixins';
 
 %apartament-room {
   background-size: cover;
@@ -37,32 +37,32 @@
 .apartament {
   &__room {
     &--salon {
-      background-image: url("./../../assets/images/apartament/salonnew-min.jpg");
+      background-image: url('./../../assets/images/apartament/salonnew-min.jpg');
       border-left: $my-border-bottom;
       border-bottom: $my-border-bottom;
       @extend %apartament-room;
       margin-top: 0px;
     }
     &--kuchnia {
-      background-image: url("./../../assets/images/apartament/kuchnianew-min.jpg");
+      background-image: url('./../../assets/images/apartament/kuchnianew-min.jpg');
       border-top: $my-border-bottom;
       border-right: $my-border-bottom;
       @extend %apartament-room;
     }
     &--pokoj {
-      background-image: url("./../../assets/images/apartament/pokojnew-min.jpg");
+      background-image: url('./../../assets/images/apartament/pokojnew-min.jpg');
       @extend %apartament-room;
       border-left: $my-border-bottom;
       border-bottom: $my-border-bottom;
     }
     &--balkon {
-      background-image: url("./../../assets/images/apartament/tarasnew-min.jpg");
+      background-image: url('./../../assets/images/apartament/tarasnew-min.jpg');
       @extend %apartament-room;
       border-top: $my-border-bottom;
       border-right: $my-border-bottom;
     }
     &--lazienka {
-      background-image: url("./../../assets/images/apartament/lazeinkanew-min.jpg");
+      background-image: url('./../../assets/images/apartament/lazeinkanew-min.jpg');
       @extend %apartament-room;
       border-bottom: $my-border-bottom;
       border-left: $my-border-bottom;
