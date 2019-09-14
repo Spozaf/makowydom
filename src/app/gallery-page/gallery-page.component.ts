@@ -184,9 +184,9 @@ export class GalleryPageComponent implements OnInit {
         big: "assets/images/galeria/1.jpg"
       },
       {
-        small: "assets/images/galeria/21.JPG",
-        medium: "assets/images/galeria/21.JPG",
-        big: "assets/images/galeria/21.JPG"
+        small: "assets/images/galeria/21.jpg",
+        medium: "assets/images/galeria/21.jpg",
+        big: "assets/images/galeria/21.jpg"
       },
       {
         small: "assets/images/galeria/22.JPG",

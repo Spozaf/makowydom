@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class OkolicaMiejsceComponent implements OnInit {
 
-  @Input() backgroundImage: string = './../../../assets/images/Okolica/krakow-min.jpg';
+  @Input() backgroundImage: string = 'assets/images/Okolica/krakow-min.jpg';
   @Input() imgIsLeft: boolean = true;
   @Input() name: string = 'Kraków';
   @Input() opis: string = `Była stolica Polski. Przepiękne miasto, które każdy musi odwiedzić. Krakowski
