@@ -58,7 +58,7 @@
                 img {
                     height: 4rem;
                     @include respond(tab-land) { // width < 1200?
-                        height: 3rem;
+                        height: 5rem;
                     }    
                 }
             }

@@ -48,7 +48,6 @@
       margin-top: 0.7rem;
       text-align: justify;
       @include respond(phone) {
-        font-size: 1.1rem;
         margin-top: 0rem;
       }
     }
@@ -126,7 +125,6 @@
       margin-top: 0.7rem;
       text-align: justify;
       @include respond(phone) {
-        font-size: 1.1rem;
         margin-top: 0rem;
       }
     }
