@@ -86,20 +86,20 @@
     &--photo {
       &-forest {
         grid-area: Forest;
-        background-image: url('./../../assets/images/dlagosci/main/salasz-min.jpg');
+        background-image: url('assets/images/dlagosci/main/salasz-min.jpg');
         background-size: cover;
       }
 
       &-cracov {
         grid-area: Cracov;
-        background-image: url('./../../assets/images/dlagosci/grill/jedzenie-min.jpg');
+        background-image: url('assets/images/dlagosci/grill/jedzenie-min.jpg');
         background-size: cover;
         background-position: bottom;
       }
 
       &-wielicka {
         grid-area: Wielicka;
-        background-image: url('./../../assets/images/dlagosci/grill/ogien2-min.jpg');
+        background-image: url('assets/images/dlagosci/grill/ogien2-min.jpg');
         background-size: cover;
         background-position: bottom;
         @include respond(phone){
@@ -108,12 +108,12 @@
       }
       &-mountain {
         grid-area: Mountain;
-        background-image: url('./../../assets/images/main-page/HomePageImage-min.jpg');
+        background-image: url('assets/images/main-page/HomePageImage-min.jpg');
         background-size: cover;
       }
       &-sanctuary {
         grid-area: Sanctuary;
-        background-image: url('./../../assets/images/dlagosci/main/grzyby-min.jpg');
+        background-image: url('assets/images/dlagosci/main/grzyby-min.jpg');
         background-size: cover;
         background-position: center;
       }
