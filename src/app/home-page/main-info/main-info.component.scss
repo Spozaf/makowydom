@@ -11,7 +11,7 @@
         display: block;
     }
     //margin: 0px 5rem;
-    background-image: url('assets/images/main-page/dom2-min.JPG');
+    background-image: url('../../../assets/images/main-page/dom2-min.JPG');
     background-size: cover;
     background-position: center;
     @include respond(phone-small) { 
