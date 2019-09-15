@@ -66,8 +66,8 @@ export class GalleryPageComponent implements OnInit {
           thumbnailsMargin: 2,
           thumbnailsOrder: 2,
           imageAnimation: NgxGalleryAnimation.Slide,
-          arrowPrevIcon: "fas fa-angle-double-left",
-          arrowNextIcon: 'fas fa-angle-double-right'
+          arrowPrevIcon: "fa fa-angle-double-left",
+          arrowNextIcon: 'fa fa-angle-double-right'
         },
         // max-width 800
         {

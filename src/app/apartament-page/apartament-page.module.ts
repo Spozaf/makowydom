@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ApartamentPageComponent } from './apartament-page.component';
-import { RoomCardComponent } from './room-card/room-card.component';
 import { SharedComponentsModule } from '../shared-components/shared-components.module';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -12,8 +11,7 @@ const routes: Routes = [
 
 @NgModule({
     declarations: [
-        ApartamentPageComponent,
-        RoomCardComponent
+        ApartamentPageComponent
     ],
     imports: [
         CommonModule,
@@ -22,7 +20,6 @@ const routes: Routes = [
     ],
     exports: [
         ApartamentPageComponent,
-        RoomCardComponent,
         RouterModule
     ]
 })

@@ -16,6 +16,7 @@ export class OkolicaMiejsceComponent implements OnInit {
   W mieście znajduje się również aquapark, tor kartingowy czy escape roomy.
   Miejsce definitywnie warte odwiedzenia!`;
   @Input() czas: number = 60;
+  isLand: boolean = true;
   constructor() { }
 
   ngOnInit() {

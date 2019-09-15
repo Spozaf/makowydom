@@ -1,6 +1,6 @@
 import { Component, OnInit, HostListener, Inject, Input } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { WINDOW } from './../window.service';
+import { WINDOW } from '../window.service';
 import { Router } from '@angular/router';
 import { ResponsiveSizeService } from '../services/responsive-size.service';
 

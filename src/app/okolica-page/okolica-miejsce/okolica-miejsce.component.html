@@ -4,7 +4,9 @@
         </div>
         <div class="miejsce--opis">
             <div class="miejsce--opis-wrapper">
-                <h1 class="miejsce--opis-h1">{{name}}</h1>
+                <h1 
+                class=" miejsce--opis-h1"
+                [ngClass]="{'phone-land__h1': isLand}">{{name}}</h1>
                 <p class="miejsce--opis-p">
                     {{opis}}
                 </p>
