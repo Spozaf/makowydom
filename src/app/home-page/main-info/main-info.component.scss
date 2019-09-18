@@ -14,11 +14,16 @@
         height: 50vh;
         display: inline-block;
     }
+    @include respond(tab-land) { 
+        height: 75vh;
+        grid-template-columns: 60% 35%;
+    }
     @include respond(phone-small) { 
         height: 75vh;
         padding: 0px 0px;
     }
     @include respond(phone-land) { 
+        height: 100vh;
         display: block;
         padding: 1rem;
     }

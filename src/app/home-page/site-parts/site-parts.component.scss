@@ -9,8 +9,15 @@
         padding: 4rem 1rem;
         height: 90vh;
     }
+    @include respond(tab-land) { 
+        //padding: 4rem 1rem;
+        height: 120vh;
+    }
     @include respond(phone) { 
         height: 240vh;
+    }
+    @include respond(phone-land) { 
+        height: 180vh;
     }
 
     &__wrapper {
