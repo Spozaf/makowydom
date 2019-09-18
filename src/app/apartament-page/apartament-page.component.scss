@@ -9,8 +9,19 @@
   box-shadow: 0 0.5rem 6rem rgba($color-primary-dark-1, 0.2);
   margin: 5rem;
   background-position: center;
+  @include respond(tab-port) { // width < 1200?
+    min-height: 55vh;
+  }
+  @include respond(tab-land) { // width < 1200?
+    min-height: 85vh;
+  }
   @include respond(phone) { // width < 1200?
     margin: 0px;
+    min-height: 90vh;
+  }
+  @include respond(phone-land) { // width < 1200?
+    min-height: 110vh;
+    margin: 3rem;
   }
 }
 
@@ -21,10 +32,12 @@
   margin: 5rem;
   padding: 5rem;
   border-bottom: $my-border-bottom;
+  background-clip: padding-box;
   @include respond(tab-port) { 
     width: 80%;
     margin: 0px;
     @include center;
+    background-color: rgba($color-secondary, 0.8);
   }
   @include respond(phone) { 
     background-color: rgba($color-secondary, 0.7);
@@ -45,6 +58,13 @@
       border-left: $my-border-bottom;
       border-bottom: $my-border-bottom;
       @extend %apartament-room;
+      @include respond(phone) { 
+        border-left:none;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+      }
+      
       //margin-top: 0px;
     }
     &--kuchnia {
@@ -52,18 +72,36 @@
       border-top: $my-border-bottom;
       border-right: $my-border-bottom;
       @extend %apartament-room;
+      @include respond(phone) { 
+        border-left:none;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+      }
     }
     &--pokoj {
       background-image: url('./../../assets/images/apartament/pokojnew-min.jpg');
       @extend %apartament-room;
       border-left: $my-border-bottom;
       border-bottom: $my-border-bottom;
+      @include respond(phone) { 
+        border-left:none;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+      }
     }
     &--balkon {
       background-image: url('./../../assets/images/apartament/tarasnew-min.jpg');
       @extend %apartament-room;
       border-top: $my-border-bottom;
       border-right: $my-border-bottom;
+      @include respond(phone) { 
+        border-left:none;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
+      }
     }
     &--lazienka {
       background-image: url('./../../assets/images/apartament/lazeinkanew-min.jpg');
@@ -72,6 +110,10 @@
       border-left: $my-border-bottom;
       @include respond(phone) { // width < 1200?
         margin-bottom: 5rem;
+        border-left:none;
+        border-right: none;
+        border-top: none;
+        border-bottom: none;
       }
     }
     &--kuchnia-info {
