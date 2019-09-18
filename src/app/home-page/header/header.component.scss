@@ -21,7 +21,11 @@
   background-size: cover;
   height: 100vh;
   position: relative;
+  @include respond(tab-port) { 
+    height: 50vh;
+  }
   @include respond(phone) { 
+    height: 100vh;
     padding-top: 8rem;
   }
   @include respond(phone-small) { 
@@ -57,6 +61,12 @@
       @include respond(phone-small) { 
         display: inline-block;
         transform: translateY(-1rem);
+      }
+      @include respond(phone-land) { 
+        display: inline-block;
+        width: 15rem;
+        height: 15rem;
+        transform: translateY(-11rem);
       }
       
     }

@@ -72,6 +72,11 @@
             display: inline-block;
             transform: translate(0rem, 0rem);
         }
+        @include respond(phone-land) { 
+            width: 11rem;
+            display: inline-block;
+            transform: translate(0rem, 0rem);
+        }
     }
 
     &__img {

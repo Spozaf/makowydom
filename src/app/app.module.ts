@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { WINDOW_PROVIDERS } from './window.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,6 +22,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SitePartsComponent } from './home-page/site-parts/site-parts.component';
 import { HeaderComponent } from './home-page/header/header.component';
 import { MainInfoComponent } from './home-page/main-info/main-info.component';
+import { WINDOW_PROVIDERS } from './services/window.service';
 // import { GalleryPageModule } from './gallery-page/gallery-page.module';
 
 const cookieConfig:NgcCookieConsentConfig = {

@@ -36,7 +36,9 @@
         <li class="navbar__item">
             <button (click)="onMenuClick()" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
-                'navbar__link--scroll-not' : navbarTransparent}">Menu</button>
+                'navbar__link--scroll-not' : navbarTransparent}">
+                <i class="fa fa-bars"></i>
+                Menu</button>
         </li>
     </ul>
 </div>
@@ -44,7 +46,8 @@
     <img src="assets/images/main-page/LogoMakowyDom.png" alt="">
     <ul>
         <li>
-            <a [routerLink]="[ '/' ]" (click)="onMenuClick()" >Makowy Dom</a>
+            <a [routerLink]="[ '/' ]" (click)="onMenuClick()" >
+                Makowy Dom</a>
         </li>
         <li>
             <a routerLink="/apartament" (click)="onMenuClick()" >Apartament</a>

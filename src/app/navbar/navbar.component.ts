@@ -1,6 +1,4 @@
 import { Component, OnInit, HostListener, Inject, Input } from '@angular/core';
-import { DOCUMENT } from '@angular/common';
-import { WINDOW } from '../window.service';
 import { Router } from '@angular/router';
 import { ResponsiveSizeService } from '../services/responsive-size.service';
 
@@ -18,8 +16,8 @@ export class NavbarComponent implements OnInit {
   sideNavbarClass: string = 'sidenav';
 
   constructor(
-    @Inject(DOCUMENT) private document: Document,
-    @Inject(WINDOW) private window,
+    //@Inject(DOCUMENT) private document: Document,
+    //@Inject(WINDOW) private window,
     private router: Router,
     private respService: ResponsiveSizeService
   ) { //sprawdzanie czy użtykownik jest na homepage

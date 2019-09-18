@@ -16,21 +16,24 @@
 
 %apartament-room-info {
   background-color: rgba($color-secondary, 0.9);
-  min-height: 69%;
   width: 30%;
-  top: 50%;
   position: absolute;
-  transform: translateY(-60%);
   margin: 5rem;
-  padding: 6rem;
+  padding: 5rem;
   border-bottom: $my-border-bottom;
   @include respond(tab-port) { 
     width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 0px;
+    @include center;
   }
-  @include respond(phone) { // width < 1200?
+  @include respond(phone) { 
     background-color: rgba($color-secondary, 0.7);
+  }
+  @include respond(phone-land) {
+    background-color: rgba($color-secondary, 0.7);
+    min-width: 80%;
+    margin: 0px;
+    @include center;
   }
 }
 
@@ -42,7 +45,7 @@
       border-left: $my-border-bottom;
       border-bottom: $my-border-bottom;
       @extend %apartament-room;
-      margin-top: 0px;
+      //margin-top: 0px;
     }
     &--kuchnia {
       background-image: url('./../../assets/images/apartament/kuchnianew-min.jpg');
@@ -103,7 +106,7 @@
     &--text {
       padding-top: 3rem;
       font-size: 1.5rem;
-      text-align: justify;
+      text-align: left
     }
 
     &--icon {

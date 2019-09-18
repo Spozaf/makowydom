@@ -22,23 +22,49 @@
             &.slick-prev {
                 left: 3rem;
                 transform: translateY(-10rem);
+                @include respond(tab-port) { // width < 1200?
+                    transform: translateY(-11rem); //1 rem = 9px, 9/16 = 50%
+                }
                 @include respond(tab-land) { // width < 1200?
                     transform: translateY(-13rem); //1 rem = 9px, 9/16 = 50%
                 }
+                
                 z-index: 10;
                 &::before{
                     color: $color-primary-dark-1;
+                    @include respond(tab-port) { 
+                        font-size: 3rem;
+                    }
+                    @include respond(phone) { // width < 1200?
+                        font-size: 3rem;
+                    }
+                    @include respond(phone-land) { // width < 1200?
+                        font-size: 3rem;
+                    }
                 }
             }
 
             &.slick-next {
                 right: 3rem;
                 transform: translateY(-10rem);
+                @include respond(tab-port) { // width < 1200?
+                    transform: translateY(-11rem); //1 rem = 9px, 9/16 = 50%
+                }
                 @include respond(tab-land) { // width < 1200?
                     transform: translateY(-13rem); //1 rem = 9px, 9/16 = 50%
                 }
+                
                 &::before{
                     color: $color-primary-dark-1;
+                    @include respond(tab-port) { 
+                        font-size: 3rem;
+                    }
+                    @include respond(phone) { // width < 1200?
+                        font-size: 3rem;
+                    }
+                    @include respond(phone-land) { // width < 1200?
+                        font-size: 3rem;
+                    }
                 }
             }
         }

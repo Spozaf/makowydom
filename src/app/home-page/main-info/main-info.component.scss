@@ -7,15 +7,20 @@
     grid-template-rows: 100%;
     grid-template-columns: 40% 55%;
     grid-column-gap: 5%;
-    @include respond(tab-port) { 
-        display: block;
-    }
-    //margin: 0px 5rem;
     background-image: url('../../../assets/images/main-page/dom2-min.JPG');
     background-size: cover;
     background-position: center;
+    @include respond(tab-port) { 
+        height: 50vh;
+        display: inline-block;
+    }
     @include respond(phone-small) { 
+        height: 75vh;
         padding: 0px 0px;
+    }
+    @include respond(phone-land) { 
+        display: block;
+        padding: 1rem;
     }
 
     &__content {
@@ -29,10 +34,16 @@
             width: 80%;
             margin-left: auto;
             margin-right: auto;
+            background-color: rgba($color-secondary, .7);
         }
         @include respond(phone-small) { 
             width: 99%;
             height: 99%;
+            background-color: rgba($color-secondary, .7);
+        }
+        @include respond(phone-land) { 
+            width: 100%;
+            height: 100%;
             background-color: rgba($color-secondary, .7);
         }
 
