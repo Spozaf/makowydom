@@ -18,6 +18,7 @@
             transform: translateY(2rem);
             @include respond(tab-port) { // width < 1200?
                 font-size: 2rem;
+                transform: translateY(1.4rem);
             }
             @include respond(phone) { // width < 1200?
                 transform: translateY(.1rem);

@@ -19,6 +19,9 @@
             }
             text-align: center;
             transform: translateY(1.7rem);
+            @include respond(tab-port) { 
+                transform: translateY(1.1rem);
+            }
             @include respond(phone-small) { 
                 transform: translateY(.1rem);
             }
@@ -42,7 +45,7 @@
             text-align: center;
             font-size: $heading-h1;
             @include respond(tab-port) { // width < 1200?
-                font-size: 3rem;
+                font-size: 2.8rem;
             }
             //text-shadow: 0 0.5rem 1rem rgba(black, .4);
             border-bottom: $my-border-bottom;

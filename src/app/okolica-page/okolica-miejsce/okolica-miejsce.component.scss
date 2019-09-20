@@ -3,19 +3,25 @@
 
 %miejsce-basic {
   height: 90vh;
+  position: relative;
+  display: flex;
+  padding: 5rem;
+  @include respond(tab-port) {
+    height: 50vh;
+  }
   @include respond(tab-land) {
     
     &:first-child {
       height: 95vh;
     }
   }
-  position: relative;
-  display: flex;
-  padding: 5rem;
   @include respond(phone) {
-    
+    height: 75vh;
     padding: 1rem 1rem;
     display: block;
+  }
+  @include respond(phone-land) {
+    height: 105vh;
   }
   color: $color-text;
   .miejsce--zdjecie {
@@ -30,6 +36,9 @@
     @include respond(phone) {
       width: 100%;
       height: 30%;
+    }
+    @include respond(phone-land) {
+      width: 40%;
     }
   }
 
@@ -47,6 +56,9 @@
       height: 70%;
       margin: 0px 0rem;
     }
+    @include respond(phone-land) {
+      width: 60%;
+    }
     .miejsce--opis-wrapper {
       position: absolute;
       @include center;
@@ -61,14 +73,27 @@
     .miejsce--opis-h1 {
       font-size: $heading-h1-big;
       margin-bottom: 2rem;
+      @include respond(tab-port) {
+        margin-bottom: 1.2rem;
+      }
       @include respond(phone) {
         font-size: $heading-h1;
+      }
+      @include respond(phone-land) {
+        font-size: 3rem;
+        margin-bottom: 1rem;
       }
     }
     .miejsce--opis-p {
       font-size: $heading-h2;
       text-align: justify;
+      @include respond(tab-port) {
+        font-size: 1.8rem;
+      }
       @include respond(phone) {
+        font-size: 1.5rem;
+      }
+      @include respond(phone-land) {
         font-size: 1.5rem;
       }
     }
@@ -78,9 +103,15 @@
       @include respond(phone) {
         margin-top: 0rem;
       }
+      @include respond(phone-land) {
+        margin-top: 1rem;
+      }
       img {
         width: 9.5rem;
         @include respond(phone) {
+          width: 7.5rem;
+        }
+        @include respond(phone-land) {
           width: 7.5rem;
         }
       }
@@ -89,6 +120,9 @@
         transform: translateY(-3rem);
         @include respond(phone) {
           transform: translateY(-2.5rem);
+        }
+        @include respond(phone-land) {
+          transform: translateY(-2rem);
         }
       }
     }
@@ -102,6 +136,9 @@
     &:first-child {
       padding-top: 8rem;
       @include respond(phone) {
+        padding-top: 1rem;
+      }
+      @include respond(phone-land) {
         padding-top: 1rem;
       }
     }
