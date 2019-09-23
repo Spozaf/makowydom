@@ -27,7 +27,7 @@ import { WINDOW_PROVIDERS } from './services/window.service';
 
 const cookieConfig:NgcCookieConsentConfig = {
   "cookie": {
-    "domain": "https://mojadomenanawszystko.com.pl"
+    "domain": "https://makowydom.pl"
   },
   "position": "bottom",
   "theme": "edgeless",
