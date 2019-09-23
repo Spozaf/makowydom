@@ -21,7 +21,7 @@ export class GalleryPageComponent implements OnInit {
   ngOnInit() {
     this.screenSize = this.respService.getScreenSize();
     //console.log(this.screenSize);
-    if (this.screenSize <= 3) {
+    if (this.screenSize >= 3) {
       this.galleryOptions = [
         {
           width: "100%",
