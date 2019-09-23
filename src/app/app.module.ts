@@ -27,7 +27,7 @@ import { WINDOW_PROVIDERS } from './services/window.service';
 
 const cookieConfig:NgcCookieConsentConfig = {
   "cookie": {
-    "domain": "localhost"
+    "domain": "https://spozaf.github.io/makowydom/"
   },
   "position": "bottom",
   "theme": "edgeless",

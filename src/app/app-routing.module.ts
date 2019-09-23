@@ -7,7 +7,7 @@ const routes: Routes = [
   { path: 'apartament', loadChildren: './apartament-page/apartament-page.module#ApartamentPageModule' },
   { path: 'atrakcje', loadChildren: './atrakcje-page/atrakcje-page.module#AtrakcjePageModule'},
   { path: 'okolica', loadChildren: './okolica-page/okolica-page.module#OkolicaPageModule' },
-  { path: 'cennik', loadChildren: './cennik-page/cennik-page.module#CennikPageModule' },
+  { path: 'informacje', loadChildren: './cennik-page/cennik-page.module#CennikPageModule' },
   { path: 'galeria', loadChildren: './gallery-page/gallery-page.module#GalleryPageModule' },
   { path: 'cookies', loadChildren: './ciasteczka/ciasteczka.module#CiasteczkaModule' }
 ];

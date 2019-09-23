@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, HostListener, Inject } from "@angular/core";
 import { Router, NavigationEnd } from "@angular/router";
-import { NgcCookieConsentService, WindowService } from "ngx-cookieconsent";
+import { NgcCookieConsentService } from "ngx-cookieconsent";
 import { ImagesService } from "./services/images.service";
 
 import { WINDOW } from "./../app/services/window.service";
