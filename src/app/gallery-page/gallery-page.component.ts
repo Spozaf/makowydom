@@ -21,7 +21,7 @@ export class GalleryPageComponent implements OnInit {
   ngOnInit() {
     this.screenSize = this.respService.getScreenSize();
     //console.log(this.screenSize);
-    if (this.screenSize == 4) {
+    if (this.screenSize <= 3) {
       this.galleryOptions = [
         {
           width: "100%",
@@ -34,8 +34,8 @@ export class GalleryPageComponent implements OnInit {
           thumbnailsMargin: 1,
           thumbnailsOrder: 1,
           imageAnimation: NgxGalleryAnimation.Slide,
-          arrowPrevIcon: "fas fa-angle-double-left",
-          arrowNextIcon: 'fas fa-angle-double-right'
+          arrowPrevIcon: "fa fa-angle-double-left",
+          arrowNextIcon: 'fa fa-angle-double-right'
         },
         // max-width 800
         {

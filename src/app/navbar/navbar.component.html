@@ -29,7 +29,7 @@
         <li class="navbar__item">
             <a routerLink="/cennik" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
-                'navbar__link--scroll-not' : navbarTransparent}">Cennik</a>
+                'navbar__link--scroll-not' : navbarTransparent}">Informacje</a>
         </li>
     </ul>
     <ul *ngIf="sideNavbar" class="navbar__list">
@@ -62,7 +62,7 @@
             <a routerLink="/galeria" (click)="onMenuClick()">Galeria</a>
         </li>
         <li>
-            <a routerLink="/cennik" (click)="onMenuClick()">Cennik</a>
+            <a routerLink="/cennik" (click)="onMenuClick()">Informacje</a>
         </li>
     </ul>
 </div>

@@ -57,7 +57,12 @@
       @include respond(tab-port) { 
         width: 15rem;
         height: 15rem;
-        transform: translateY(-10rem);
+        transform: translateY(-.1rem);
+      }
+      @include respond(tab-land) { 
+        // width: 15rem;
+        // height: 15rem;
+        transform: translateY(-12rem);
       }
       @include respond(phone) { 
         width: 15rem;
@@ -81,15 +86,22 @@
       color: $color-white;
       font-size: 12rem;
       @include respond(tab-port) { 
-        font-size: 10rem;
+        font-size: 8rem;
+      }
+      @include respond(tab-land) { 
+        font-size: 9rem;
       }
       @include respond(phone) { 
-        font-size: 7rem;
+        font-size: 5.3rem;
       }
       @include respond(phone-land) { 
         font-size: 7rem;
       }
       display: inline-block;
+    }
+
+    &--underline{
+      border-bottom: $my-border-bottom;
     }
   }
 }

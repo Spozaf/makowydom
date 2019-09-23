@@ -9,8 +9,14 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    @include respond(tab-port) {
+        padding: 8rem 1rem;
+    }
     @include respond(phone) {
         padding: 8rem 1rem;
+    }
+    @include respond(phone-land) {
+        padding: 5rem 1rem;
     }
     
     &__wrapper{
@@ -26,6 +32,16 @@
 
     &__50{
         border-bottom: $my-border-bottom;
+    }
+
+    &__tel{
+        font-size: 5rem;
+        border-bottom: $my-border-bottom;
+    }
+
+    &__adres{
+        text-decoration: underline;
+        color: $color-text;
     }
 
     &__hr{
