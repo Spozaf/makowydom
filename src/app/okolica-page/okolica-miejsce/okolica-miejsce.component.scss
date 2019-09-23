@@ -16,7 +16,7 @@
     }
   }
   @include respond(phone) {
-    height: 75vh;
+    height: 85vh;
     padding: 1rem 1rem;
     display: block;
   }
@@ -86,7 +86,7 @@
     }
     .miejsce--opis-p {
       font-size: $heading-h2;
-      text-align: justify;
+      text-align: left;
       @include respond(tab-port) {
         font-size: 1.8rem;
       }
