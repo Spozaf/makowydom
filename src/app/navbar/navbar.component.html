@@ -32,7 +32,7 @@
                 'navbar__link--scroll-not' : navbarTransparent}">Informacje</a>
         </li>
     </ul>
-    <ul *ngIf="sideNavbar" class="navbar__list">
+    <ul *ngIf="sideNavbar && !sideNavbarOpen" class="navbar__list">
         <li class="navbar__item">
             <button (click)="onMenuClick()" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 

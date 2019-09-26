@@ -30,12 +30,14 @@
         height: 33.333333%;
         background-image: $gradient-white;
         position: relative;
-
         display: grid;
         grid-template-columns: 1fr 1fr;
         @include respond(phone) { 
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
+            @supports not (display: grid) {
+                display: block;
+            }
         }
 
         &:not(:last-child){
@@ -48,6 +50,10 @@
             width: 100%;
             height: 100%;
             transition: transform .7s;
+            @supports not (display: grid) {
+                height: 50%;
+            }
+            
         }
 
         &:hover &--image {
