@@ -1,16 +1,5 @@
 @import "../../../sharedScss/variables";
 
-@keyframes slideInFromDown {
-  0% {
-    transform: translateY(98%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(50%);
-    opacity: 1;
-  }
-}
-
 .header {
   background-image: linear-gradient(
       to right bottom,
@@ -41,10 +30,6 @@
   &__text-box {
     text-align: center;
     transform: translateY(50%);
-    animation: 3s ease-out .5s 1 forwards slideInFromDown;
-    opacity: 0;
-    -webkit-animation-delay: .8s; 
-    animation-delay: .8s;
     
 
     &--img {
