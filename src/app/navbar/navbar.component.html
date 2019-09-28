@@ -1,6 +1,5 @@
 <div 
 class="navbar" 
-(click)="onMenuClick()" 
 [ngClass]="{
     'navbar__scroll' : !navbarTransparent,
      'navbar__scroll-not' : navbarTransparent
@@ -49,7 +48,7 @@ class="navbar"
     </ul>
 </div>
 <!-- <div class="{{sideNavbarClass}}" (click)="clickedInside($event)"> -->
-<div class="{{sideNavbarClass}}" (clickOutside)="onMenuClick()" >
+<div class="{{sideNavbarClass}}" (clickOutside)="onClickOutside()" >
     <img src="assets/images/main-page/LogoMakowyDom.png" alt="">
     <ul>
         <li>

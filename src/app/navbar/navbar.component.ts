@@ -14,6 +14,7 @@ export class NavbarComponent implements OnInit {
   sideNavbar: boolean;
   sideNavbarOpen: boolean = false;
   sideNavbarClass: string = 'sidenav';
+  menuButoonClicked: boolean = false;
 
   constructor(
     //@Inject(DOCUMENT) private document: Document,
@@ -70,7 +71,17 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+  onClickOutside(){
+    if(this.sideNavbarOpen && !this.menuButoonClicked){
+      console.log('click outside open');
+      this.sideNavbarClass = 'sidenav'
+      this.sideNavbarOpen = !this.sideNavbarOpen;
+    }
+    this.menuButoonClicked = false;
+  }
+
   onMenuClick(){
+    this.menuButoonClicked = true;
     if(this.sideNavbarOpen){
       this.sideNavbarClass = 'sidenav'
       this.sideNavbarOpen = !this.sideNavbarOpen;
@@ -79,4 +90,5 @@ export class NavbarComponent implements OnInit {
       this.sideNavbarOpen = !this.sideNavbarOpen;
     }
   }
+
 }
