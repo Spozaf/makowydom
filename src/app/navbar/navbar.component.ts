@@ -79,19 +79,4 @@ export class NavbarComponent implements OnInit {
       this.sideNavbarOpen = !this.sideNavbarOpen;
     }
   }
-
-  //kliknięcie wewnątrz menu
-  clickedInside($event: Event){
-    $event.preventDefault();
-    $event.stopPropagation();  // <- that will stop propagation on lower layers
-  }
-
-  //kliknięcie na zewnątrz menu
-  @HostListener('document:click', ['$event']) clickedOutside($event){
-    // here you can hide your menu
-    if(this.sideNavbarOpen){
-      this.sideNavbarClass = 'sidenav'
-      this.sideNavbarOpen = !this.sideNavbarOpen;
-    }
-  }
 }

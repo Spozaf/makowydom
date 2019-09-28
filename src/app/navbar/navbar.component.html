@@ -1,4 +1,10 @@
-<div class="navbar" (click)="clickedInside($event)" [ngClass]="{'navbar__scroll' : !navbarTransparent, 'navbar__scroll-not' : navbarTransparent}">
+<div 
+class="navbar" 
+(click)="onMenuClick()" 
+[ngClass]="{
+    'navbar__scroll' : !navbarTransparent,
+     'navbar__scroll-not' : navbarTransparent
+    }">
     <ul *ngIf="!sideNavbar" class="navbar__list">
         <li class="navbar__item">
             <a [routerLink]="[ '/' ]" [ngClass]="{
@@ -32,7 +38,7 @@
                 'navbar__link--scroll-not' : navbarTransparent}">Informacje</a>
         </li>
     </ul>
-    <ul *ngIf="sideNavbar && !sideNavbarOpen" class="navbar__list">
+    <ul *ngIf="sideNavbar && !sideNavbarOpen" (click)="onMenuClick()"  class="navbar__list">
         <li class="navbar__item">
             <button (click)="onMenuClick()" [ngClass]="{
                 'navbar__link--scroll' : !navbarTransparent, 
@@ -42,7 +48,8 @@
         </li>
     </ul>
 </div>
-<div class="{{sideNavbarClass}}" (click)="clickedInside($event)">
+<!-- <div class="{{sideNavbarClass}}" (click)="clickedInside($event)"> -->
+<div class="{{sideNavbarClass}}" (clickOutside)="onMenuClick()" >
     <img src="assets/images/main-page/LogoMakowyDom.png" alt="">
     <ul>
         <li>

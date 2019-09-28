@@ -23,6 +23,7 @@ import { SitePartsComponent } from './home-page/site-parts/site-parts.component'
 import { HeaderComponent } from './home-page/header/header.component';
 import { MainInfoComponent } from './home-page/main-info/main-info.component';
 import { WINDOW_PROVIDERS } from './services/window.service';
+import { ClickOutsideModule } from 'ng-click-outside';
 // import { GalleryPageModule } from './gallery-page/gallery-page.module';
 
 const cookieConfig:NgcCookieConsentConfig = {
@@ -68,6 +69,7 @@ const cookieConfig:NgcCookieConsentConfig = {
     NgcCookieConsentModule.forRoot(cookieConfig),
     BrowserModule,
     AppRoutingModule,
+    ClickOutsideModule,
     //OkolicaPageModule,
     SharedComponentsModule,
     //AtrakcjePageModule,

@@ -33,11 +33,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         @include respond(phone) { 
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            @supports not (display: grid) {
-                display: block;
-            }
+            // grid-template-columns: 1fr;
+            // grid-template-rows: 1fr 1fr;
+            display: block;
         }
 
         &:not(:last-child){
@@ -50,7 +48,9 @@
             width: 100%;
             height: 100%;
             transition: transform .7s;
-            @supports not (display: grid) {
+            @include respond(phone) { 
+                // grid-template-columns: 1fr;
+                // grid-template-rows: 1fr 1fr;
                 height: 50%;
             }
             
